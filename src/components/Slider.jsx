@@ -5,6 +5,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import PlacesData from "@/clientData/PlacesData";
 import Link from "next/link";
+import Image from "next/image";
 const Countries = [
 
 
@@ -71,12 +72,12 @@ animateIn={true}
 ? PlacesData.map((product) => {
 return (
 
-    <Link href={`/projects/${product.name}`} className=" relative  hover:scale-105 transform transition duration-300 ease-out">
+    <Link key={product.title} href={`/projects/${product.name}`} className=" relative  hover:scale-105 transform transition duration-300 ease-out">
        
-       <div className="relative h-[200px]   w-full overflow-hidden">
-        <img className="rounded-xl " src={product.img} />
+       <div className="relative min-h-[300px]   overflow-hidden">
+        <Image  fill={true} className="rounded-xl bg-top" src={product.img} />
        </div>
-       <h3 className="text-2xl mt-3 font-bold"> {product.title}</h3> </Link> 
+       <h3 className="text-2xl mt-3 font-bold "> {product.title}</h3> </Link> 
 );
 })
 : ""}
