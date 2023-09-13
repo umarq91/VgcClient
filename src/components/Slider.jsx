@@ -75,7 +75,7 @@ return (
     <Link key={product.title} href={`/projects/${product.name}`} className=" relative  hover:scale-105 transform transition duration-300 ease-out">
        
        <div className="relative min-h-[300px]   overflow-hidden">
-        <Image  fill={true} className="rounded-xl bg-top" src={product.img} />
+        <Image  alt="" fill={true} className="rounded-xl bg-top" src={product.img} />
        </div>
        <h3 className="text-2xl mt-3 font-bold "> {product.title}</h3> </Link> 
 );
