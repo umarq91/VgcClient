@@ -1,4 +1,5 @@
 import Image from "next/image";
+import WhatsAppButton from "./Button";
 
 function Hero() {
   return (
@@ -42,6 +43,7 @@ function Hero() {
 
 <span className=' font-light text-xl '> Location</span>
 </a>
+<WhatsAppButton/>
 </div>
 
 
