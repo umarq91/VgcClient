@@ -43,10 +43,10 @@
 
 import React from 'react';
 
-const EmailButton = () => {
+const EmailButton = ({msg}) => {
   const emailAddress = 'm.umarqureshi091@gmail.com'; // Replace with the email address you want to use
   const subject = 'Regarding Your Service'; // Replace with the subject of the email
-  const body = 'Hello, I have a question about your service.'; // Replace with the body of the email
+  const body = msg // Replace with the body of the email
 
   const handleClick = () => {
     const emailURL = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
