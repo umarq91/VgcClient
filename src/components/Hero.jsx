@@ -43,7 +43,10 @@ function Hero() {
 
 <span className=' font-light text-xl '> Location</span>
 </a>
+<div className="bg-green-200 text-black ">
+
 <WhatsAppButton/>
+</div>
 </div>
 
 
