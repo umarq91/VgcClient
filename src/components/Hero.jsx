@@ -1,10 +1,9 @@
-'use client'
 import Image from "next/image";
 import WhatsAppButton from "./Button";
 import { useState } from "react";
 
 function Hero() {
-  const [test,settest] = useState('')
+
   return (
     <section className='hero-wrapper  pb-4 '>
         {/* container */}
@@ -36,18 +35,10 @@ function Hero() {
                    </span>
                    </div>
 
-{/* Button for Our Location */}
-{/*  */}
-<input onChange={(e)=> settest(e.target.value)} className="w-1/4"/>
-
-{/*  */}
-
-
 
 <div className='flex mt-4  '>
 
-
-
+{/* Button for Our Location */}
 
 <a target="_blank" href={'https://www.google.com/maps/place/MMC+General+Hospital/@34.0337191,71.6001506,19.22z/data=!4m6!3m5!1s0x38d93da3b8f429cb:0xbd5735e90857000!8m2!3d34.0336891!4d71.600201!16s%2Fg%2F1yg4vbl8m?entry=ttu'} className='w-[30%] bg-gray-600  flex items-center justify-center hover:scale-110'>
 <svg className='pb-1 hover:scale-110 transition ease-in' xmlns="http://www.w3.org/2000/svg" x="0px" y="2px" width="30" height="35" viewBox="0 0 48 48">
@@ -58,7 +49,7 @@ function Hero() {
 </a>
 <div className="bg-green-200 text-black ">
 
-<WhatsAppButton msg={test} />
+<WhatsAppButton />
 </div>
 </div>
 
