@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import ceo from "../../../public/ceo.jpg"
-import md from "../../../public/md.jpg"
+import ceo from "@/assets/ceo.JPG"
+import md from "@/assets/md.JPG"
 
 import Slider from '@/components/Slider';
 function Aboutus() {
