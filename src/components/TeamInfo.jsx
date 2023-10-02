@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import PlacesData from "@/clientData/PlacesData";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -22,7 +21,7 @@ ssr: false,
 // This is for React JS, Remove this for Next.js
 // import OwlCarousel from 'react-owl-carousel';
 
-const Slider = () => {
+const TeamInfo = () => {
 const options = {
   margin: 30,
   responsiveClass: true,
@@ -57,7 +56,7 @@ animateIn={true}
 {...options}
 >
 
-{PlacesData && PlacesData.length > 0
+{/* {PlacesData && PlacesData.length > 0
 
 && PlacesData.map((product) => {
 return (
@@ -70,14 +69,14 @@ return (
        <h3 className="text-2xl mt-3 font-bold "> {product.title}</h3> </Link> 
 );
 })
-}
+} */}
 </OwlCarousel>
 </ul>
 </div>
 </div>
 
 )}
-export default Slider;
+export default TeamInfo;
         
 
         

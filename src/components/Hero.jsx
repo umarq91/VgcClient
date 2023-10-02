@@ -5,11 +5,15 @@ import { useState } from "react";
 function Hero() {
 
   return (
-    <section className="hero-wrapper  pb-4 ">
+    <section className="hero-wrapper  pb-4  max-w-[90vw] mx-auto bg-white rounded-tl-full shadow-lg">
       {/* container */}
-      <div className="flex  flex-wrap items-center gap-[50px]">
+      <div className="flex  flex-wrap items-center gap-[25px]">
         {/* Left */}
-        <div className="flex-1">
+        <div className="flex-1 relative">
+          {/* <div className="h-24 w-24  absolute   top-10 bg-orange-300 rounded-full" /> */}
+          {/* <div className="h-10 w-10 bg-blue-300 absolute  left-30 rounded-full"/> */}
+          {/* <div className="h-16 w-16 absolute   bg-blue-300 rounded-full" /> */}
+         
           <div className="hero-left flex flex-col justify-center">
             <div
               variants={""}
@@ -18,25 +22,24 @@ function Hero() {
               viewport={{ once: false, amount: 0.7 }}
               className="hero-title  font-bold text-5xl lg:text-7xl lg:pb-10 md:text-6xl sm:text-5xl  leading-4 z-40"
             >
-              <h1 className="leading-[60px] z-20">
+              <h1 className="leading-[60px]  z-20">
                 Vision <br />
                 <span className="font-normal">group of </span> <br /> companies
               </h1>
             </div>
 
-            <div className="hero-descr flex flex-col justify-end text-sm opacity-70 italic pt-4">
-              <span>
-                Discover a life where every sunrise brings the promise of a new
-                <br /> beginning. Welcome to VGC where we turn your dream of
-                owning the perfect{" "}
-              </span>
-              <span>
-                {" "}
-                home into a reality. Experience the extraordinary with us.
+            <div className="hero-descr flex flex-col justify-end text-sm opacity-70 italic">
+              <span className="font-semibold italic">
+                We are an emerging group of various businesses like real estate
+                development, construction services and planning, corporate brand
+                building, Investment planning, sales & marketing services, and
+                digital services. The group leaders aim to make the best real
+                estate of Pakistan by the integration of modern technology,
+                hardworking team and unique ideas.
               </span>
             </div>
 
-            <div className="flex mt-4  ">
+            <div className="flex mt-4  ml-10">
               {/* Button for Our Location */}
 
               <a
@@ -44,8 +47,8 @@ function Hero() {
                 href={
                   "https://www.google.com/maps/place/MMC+General+Hospital/@34.0337191,71.6001506,19.22z/data=!4m6!3m5!1s0x38d93da3b8f429cb:0xbd5735e90857000!8m2!3d34.0336891!4d71.600201!16s%2Fg%2F1yg4vbl8m?entry=ttu"
                 }
-                className="w-[30%] md:w-[130px] bg-gray-600  flex items-center justify-center hover:scale-110"
-              >
+                className="w-[30%] hover:bg-black md:w-[130px] border-black border-2 rounded-full   flex items-center justify-center hover:scale-110 transition ease-in"
+              > 
                 <svg
                   className="pb-1 hover:scale-110 transition ease-in"
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,27 +80,33 @@ function Hero() {
                   ></path>
                 </svg>
 
-                <span className=" font-light text-xl "> Location</span>
+                <span className=" font-light text-black text-xl pr-2 hover:text-white">
+                  {" "}
+                  Location
+                </span>
               </a>
 
+              {/* Email  */}
+              <div className="border-black cursor-pointer   hover:bg-black hover:text-white border-2 rounded-full  flex justify-center px-2 py-1 ml-2 gap-2 hover:scale-110  transition ease-in">
+                {/* <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-8 text-black hover:text-white"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+                <WhatsAppButton /> */}
+                <span className="px-2  py-1 text-lg">
 
-{/* Email  */}
-              <div className="bg-gray-200 text-black flex justify-center px-2 py-1 ml-2 gap-2 hover:scale-110">
-              <svg
-                 
-                 xmlns="http://www.w3.org/2000/svg"
-                 fill="none"
-                 viewBox="0 0 24 24"
-                 strokeWidth={1.5}
-                 stroke="currentColor"
-                 className="w-6 h-8"
-               >
-                 <path
-                   strokeLinecap="round"
-                   strokeLinejoin="round"
-                   d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
-               </svg>
-                <WhatsAppButton />
+                Projects ►
+                </span>
               </div>
             </div>
           </div>
@@ -105,7 +114,7 @@ function Hero() {
 
         {/* Right */}
 
-        <div className="hero-right  flex flex-1 justify-center items-center w-full relative">
+        <div className="hero-right  flex flex-1 justify-center items-center w-full relative ">
           <div
             initial={{ x: "10rem", opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -113,16 +122,17 @@ function Hero() {
               duration: 3,
               type: "spring",
             }}
-            className="w-[400px] h-[450px] lg:h-[550px] lg:mt-2  mt-8 overflow-hidden rounded-tl-3xl  border-opacity-[24] "
+            className="w-[600px] sm:w-[400px] md:w-[500px] relative h-[550px] lg:h-[550px] lg:mt-2  mt-8 overflow-hidden rounded-tl-3xl  border-opacity-[24] "
           >
-            <div className="h-[200px] w-[full]">
+            
               <Image
                 alt="c"
-                className="w-full h-[500px] object-cover opacity-70"
-                fill={true}
+                className="w-full  object-cover opacity-70"
+            fill={true}
+
                 src="https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2067&q=80"
               />
-            </div>
+           
           </div>
         </div>
       </div>

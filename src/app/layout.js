@@ -1,9 +1,11 @@
 
 import NavBar from '../components/Navbar'
 import './globals.css'
-import { Inter ,Poppins} from 'next/font/google'
+import { Inter ,Poppins,Urbanist} from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+const urbanist = Urbanist({ subsets: ['latin'] })
+
 
 
 
@@ -18,7 +20,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
       <NavBar/>
       
-      <div className=' min-h-[100vh] max-w-[90vw] mx-auto  flex flex-col justify-between'>
+      <div className=' ] mx-auto  flex flex-col justify-between'>
         {children}
       
         </div>

@@ -2,9 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 function AboutUs() {
   return (
-    <div className='flex gap-[50px] flex-wrap pt-2   p-4  mt-20'>
+    <div className='bg-white text-black shadow-lg xl:rounded-tr-full max-w-[90vw] mx-auto'>
+
+    
+    <div className='flex gap-[50px] flex-wrap pt-2   p-4  mt-20  max-w-[80vw] mx-auto '>
 {/* Left */}
-    <div className="bg-gray-500 flex-1 min-h-[300px] min-w-[350px] relative">
+    <div className="bg-gray-500 flex-1 min-h-[300px] min-w-[550px] relative">
 
 <div className="flex flex-col  justify-center items-center">
 
@@ -26,22 +29,14 @@ function AboutUs() {
     
     className="max-w-[500px] min-w-[400px] flex-1 my-4 sm:my-10  lg:my-auto md:my-auto text-md sm:text-sm sm:max-w-[400px] md:max-w-[400px] lg:max-w-[500px]">
    <div className='mb-3'>
-    <h1 className='font-bold text-3xl  '> About Us </h1>
-    <strong> Vision </strong>Discover a life where every sunrise brings the promise of a new
-beginning. Welcome to VGC where we turn your dream of owning the perfect
-home into a reality. Experience the extraordinary with us.
-<strong> Vision </strong>Discover a life where every sunrise brings the promise of a new
-beginning. Welcome to VGC where we turn your dream of owning the perfect
-home into a reality. Experience the extraordinary with us.fdgdfg
-Experience the extraordinary with us.
-<strong> Vision </strong>Discover a life where every sunrise brings the promise of a new
-beginning. Welcome to VGC where we turn your dream of owning the perfect
-home into a reality. Experience the extraordinary with us.fdgdfg
+    <h1 className='font-bold text-3xl  '> About VGC </h1>
+    the (Vision Group of Companies) will act as the leading smartest Real Estate Company and play its due role in Pakistan's real estate development. The corporations head office is in Peshawar, with a plethora of site offices spreading across the country. Our vision is to become Pakistan's first value-based organization and revolutionize the real estate industry in Pakistan with 100% investor confidence, satisfaction and country-wide projects
     </div>
-<a href='/about-us' className='rounded-xl  px-4 mt-2   py-2 bg-gray-100 text-black mt-2 cursor-pointer hover:opacity-80' >  Read More </a>
+<a href='/about-us' className='rounded-xl  px-4 mt-2   py-2 bg-black text-gray-100 mt-2 cursor-pointer hover:opacity-60' >  Read More ► </a>
     </div>
 
 
+    </div>
     </div>
 
   )

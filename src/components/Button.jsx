@@ -54,7 +54,7 @@ const EmailButton = () => {
   };
 
   return (
-    <button onClick={handleClick}>Send Email</button>
+    <button className='text-black pr-2 hover:text-white'  onClick={handleClick}>Send Email</button>
   );
 };
 
