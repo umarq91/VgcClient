@@ -81,6 +81,7 @@ const content = {
         <div className="items-center md:ml-10 flex mx-auto md:w-1/2 lg:1/3 justify-center">
           <Image
             src={ceo}
+            alt='image'
             width={500}
             height={500}
             objectFit='cover'
@@ -114,6 +115,7 @@ const content = {
         <div className="items-center md:ml-10 flex mx-auto md:w-1/2 lg:1/3 justify-center">
           <Image
             src={md}
+            alt='image'
             width={500}
             height={500}
             className="rounded-full object-cover md:rounded-lg lg:rounded-lg xl:rounded-xl"

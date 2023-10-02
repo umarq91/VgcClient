@@ -13,7 +13,7 @@ function AboutUs() {
 
 </div>
 <div className="w-[100%] h-[90%]  flex justify-center mt-2 sm:h-64 sm:w-[400px] lg:w-[400px] h-[850px]">
-<Image className='w-full h-[500px]  object-cover opacity-70'  fill={true} src="https://images.unsplash.com/photo-1621745860091-1f5544d538af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" />
+<Image className='w-full h-[500px]  object-cover opacity-70'  alt='image' fill={true} src="https://images.unsplash.com/photo-1621745860091-1f5544d538af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" />
    
     {/* <img  className='h-full w-full' src='https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'/> */}
 </div>
