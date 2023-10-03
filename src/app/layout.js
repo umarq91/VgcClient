@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
       <NavBar/>
       
-      <div className=' ] mx-auto  flex flex-col justify-between'>
+      <div className='  mx-auto '>
         {children}
       
         </div>

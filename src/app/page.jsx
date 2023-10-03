@@ -15,8 +15,10 @@ export default function Home() {
 
   const mapSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.330685110177!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfb95d84aaae21%3A0x166e06299e5a5f7f!2s${latitude}%2C%20${longitude}!5e0!3m2!1sen!2sen!4v1633280623754!5m2!1sen!2sen&z=${zoomLevel}`;
   return (
-    <div className='test'>
+    <div className='test max-w-[100vw]'>
       <div className="mt-6"> <Hero /></div>
+ 
+
       <iframe
       src={mapSrc}
       width="100%"
@@ -27,7 +29,7 @@ export default function Home() {
       title="Google Map"
     ></iframe>
 
-      <div className="mt-24 mb-24"> <Stats /></div>
+      {/* <div className="mt-24 mb-24"> <Stats /></div> */}
       {/* <hr className=" text-black mt-10 opacity-70 innerWidth" /> */}
      
 

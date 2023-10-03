@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import ceo from "@/assets/ceo.JPG"
 import md from "@/assets/md.JPG"
+import second from '../../public/aboutusbg.avif'
 
 import Slider from '@/components/Slider';
 function Aboutus() {
@@ -16,18 +17,18 @@ const content = {
 
 
   return (
-    <div className="mt-4">
-      <div className="bg-gray-300 min-h-[300px]  relative">
+    <div className="">
+      <div className="bg-gray-300 min-h-[300px] h-[400px] md:h-[450px]  relative">
         <Image
           fill={true}
           className="object-cover"
-          src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          src={second}
         />
-        <div className="min-h-[80px] w-1/2 min-w-1/3 bg-green-400 absolute bottom-10 lg:min-w-1/3">
-          <h1 className="text-black text-3xl font-poppins  pl-6 font-bold items-center">
+        <div className="min-h-[80px] w-1/2 min-w-1/3 bg-gray-900 absolute bottom-10 lg:min-w-1/3">
+          <h1 className="text-white text-3xl font-poppins  pl-6 font-bold items-center">
             About Us{" "}
           </h1>
-          <p className="text-black text-sm leading-3 font-poppins font-medium pl-6 pb-4">
+          <p className="text-white text-sm leading-3 font-poppins font-medium pl-6 pb-4">
             {" "}
             About Our Serivces ,Team and Enviroment{" "}
           </p>
@@ -38,7 +39,7 @@ const content = {
         {" "}
         ABOUT US{" "}
       </h1>
-      
+    
       <div className="px-4 md:flex lg:flex  lg:px-16 xl:px-16 xl:mx-auto gap-[30px]">
         {/* Intro */}
         <div className="flex-3  md:w-full lg:w-1/2">
