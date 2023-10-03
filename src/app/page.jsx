@@ -7,6 +7,10 @@ import Projects from '@/components/Projects';
 import { Carousel } from 'react-responsive-carousel';
 import Slider from '@/components/Slider';
 import ContactUs from '@/components/contactus';
+import ProjectCard from '@/components/ProjectCard';
+import img1 from "@/public/project1.avif";
+import img2 from "@/public/project2.avif";
+
 
 export default function Home() {
   const latitude = 34.0329245;
@@ -43,7 +47,11 @@ export default function Home() {
       {/* <h1 className='flex justify-center text-4xl mt-4 font-bold mx-auto sm:text-5xl lg:text-6xl'> Discover Our Projects </h1>
       <div className="mt-20"> <Slider /></div> */}
 
-      <Projects/>
+<div className="grid gap-6 mt-20 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:grid-cols-3 items-center place-items-center ">
+        <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
+        <ProjectCard img={img2} title="Wisal-garden" type="Commercial" location="Peshawar"/>
+        <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
+      </div>
 
       <hr className="pt-20 mt-10 opacity-70 innerWidth" />
       <hr className=" lg:pb-20 opacity-70 innerWidth" />

@@ -1,11 +1,28 @@
 
 import NavBar from '../components/Navbar'
 import './globals.css'
-import { Inter ,Poppins,Urbanist} from 'next/font/google'
+import { Inter ,Poppins,Urbanist, Inconsolata, Lora} from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 const urbanist = Urbanist({ subsets: ['latin'] })
 
+
+
+export const inconsolata = Inconsolata({
+  weight: ['400', '700'],
+  display: 'swap',
+  variable: '--font-inconsolata',
+  fallback: ['Courier New', 'Courier', 'monospace'],
+  subsets: ['latin'],
+});
+
+export const lora = Lora({
+  weight: ['400', '700'],
+  display: 'swap',
+  variable: '--font-lora',
+  fallback: ['Times New Roman', 'Times', 'serif'],
+  subsets: ['latin'],
+});
 
 
 
@@ -16,8 +33,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html  lang="en">
+      <body className={`${urbanist.variable} ${inter.variable} ${inconsolata.variable} ${lora.variable}`}>
       <NavBar/>
       
       <div className='  mx-auto '>
