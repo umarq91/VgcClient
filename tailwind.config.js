@@ -16,7 +16,8 @@ module.exports = {
         lora:  'var(--font-lora)',
         openSans:   'var(--font-opensans)',
         inconsolata: 'var(--inconsolata)',
-        inter: 'var(--inter)'
+        inter: 'var(--inter)',
+      
 
       },
     },

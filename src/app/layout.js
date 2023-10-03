@@ -15,6 +15,13 @@ export const inconsolata = Inconsolata({
   fallback: ['Courier New', 'Courier', 'monospace'],
   subsets: ['latin'],
 });
+export const poppins = Poppins({
+  weight: ['400', '700'],
+  display: 'swap',
+  variable: '--font-poppins',
+  fallback: ['Courier New', 'Courier', 'monospace'],
+  subsets: ['latin'],
+});
 
 export const lora = Lora({
   weight: ['400', '700'],
@@ -34,7 +41,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html  lang="en">
-      <body className={`${urbanist.variable} ${inter.variable} ${inconsolata.variable} ${lora.variable}`}>
+      <body className={`${urbanist.className} ${inter.variable}  ${poppins.variable} ${inconsolata.variable} ${lora.variable}`}>
       <NavBar/>
       
       <div className='  mx-auto '>

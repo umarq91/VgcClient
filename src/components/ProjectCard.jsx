@@ -11,9 +11,9 @@ const ProjectCard = ({img,type,title,location}) => {
       <div className="h-[70%] relative">
         <Image fill={true} alt="Project Picture" objectFit="cover" src={img} className="" />
       </div>
-      <h3 className=" text-blue-700 block  font-bold ml-2"> {type}</h3>
+      <h3 className=" text-blue-700 block  font-bold ml-2 font-lora"> {type}</h3>
 
-      <h2 className="text-3xl font-semibold ml-2 mt-2 font-inconsolata">{title}</h2>
+      <h2 className="text-3xl font-semibold ml-2 mt-2 font-lora">{title}</h2>
       <hr />
       <div className="flex pl-2">
         <svg
