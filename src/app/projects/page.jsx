@@ -1,6 +1,8 @@
 import ProjectCard from '@/components/ProjectCard'
 import Image from 'next/image'
 import React from 'react'
+import img1 from "@/public/project1.avif";
+import img2 from "@/public/project2.avif";
 
 
 function Projects() {
@@ -24,10 +26,11 @@ function Projects() {
 
 
       <div className="grid gap-6 mt-20 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:grid-cols-3 items-center place-items-center ">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
+        <ProjectCard img={img2} title="Wisal-garden" type="Commercial" location="Peshawar"/>
+        <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
+        <ProjectCard img={img2} title="Darmangi" type="Residential" location="Peshawar"/>
+
       </div>
     </div>
   );

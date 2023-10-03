@@ -1,31 +1,55 @@
-import Image from 'next/image'
-import React from 'react'
-import img from "../public/darmangi.jpg"
-import Link from 'next/link'
+import Image from "next/image";
+import React from "react";
+import img from "../public/darmangi.jpg";
 
-const ProjectCard = () => {
+
+import Link from "next/link";
+
+const ProjectCard = ({img,type,title,location}) => {
   return (
-    <div className=' ml-10 h-[450px] w-[400px] bg-white shadow-lg flex flex-col cursor-pointer rounded-3xl hover:bg-red-600 hover:text-white hover:opacity-100 opacity-80'>
-    <div className='h-[70%] relative bg-blue-200  '>
-        <Image 
-        fill={true}
-         alt="Project Picture"
-         objectFit='cover'
-         src={img}
-      
-        />
-        </div>   
-        <h3 className='bg-red-600 text-white block text-center font-semibold'> -- Residential</h3>     
-        
-    <h2 className='text-3xl font-bold ml-2 mt-2'>
-        Project Title
-    </h2>
-    <div className='mt-2'>
-    <Link href={""}><button className=' px-2 py-2 mt-2 ml-3 bg-red-500 text-white ml-2 hover:bg-black hover:text-white cursor-pointer ml-2'> View Details </button> </Link>
-        </div>
+    <div className=" ml-10 h-[450px] w-[400px] bg-white shadow-lg flex flex-col cursor-pointer rounded-3xl hover:-translate-y-4 ease-in delay-150 translate-64">
+      <div className="h-[70%] relative">
+        <Image fill={true} alt="Project Picture" objectFit="cover" src={img} className="" />
+      </div>
+      <h3 className=" text-blue-700 block  font-bold ml-2"> {type}</h3>
 
+      <h2 className="text-3xl font-semibold ml-2 mt-2">{title}</h2>
+      <hr />
+      <div className="flex pl-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+          />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+          />
+        </svg>
+
+        <p className=""> {location} </p>
+      </div>
+      <div className="mt-2">
+        <Link href={""}>
+          <button
+            type="button"
+            class="text-white m-2 bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+          >
+            View Details
+          </button>{" "}
+        </Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;
