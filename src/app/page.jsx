@@ -11,7 +11,6 @@ import ProjectCard from '@/components/ProjectCard';
 import img1 from "@/public/project1.avif";
 import img2 from "@/public/project2.avif";
 
-
 export default function Home() {
   const latitude = 34.0329245;
   const longitude = 71.5983885;

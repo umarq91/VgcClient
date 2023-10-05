@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const ProjectCard = ({img,type,title,location}) => {
   return (
-    <div className=" h-[450px] w-[400px] md:w-[360px]  bg-white shadow-lg flex flex-col cursor-pointer rounded-3xl hover:-translate-y-4 ease-in delay-150 translate-64 drop-shadow-xl justify-center">
+    <div className=" h-[450px] w-[330px] md:w-[360px]  bg-white shadow-lg flex flex-col cursor-pointer rounded-3xl hover:-translate-y-4 ease-in delay-150 translate-64 drop-shadow-xl justify-center">
       <div className="h-[70%] relative">
         <Image fill={true} alt="Project Picture" objectFit="cover" src={img} className="" />
       </div>

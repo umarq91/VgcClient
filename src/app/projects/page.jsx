@@ -7,8 +7,8 @@ import img2 from "@/public/project2.avif";
 
 function Projects() {
   return (
-    <div className="">
-     <div className="bg-blue-400 h-[400px] xl:h-[500px] md:h-[450px] w-full relative">
+    <div className="container mx-auto max-w-screen-lg">
+     <div className=" h-[400px] xl:h-[500px] md:h-[450px] w-full relative">
   <div
     className="absolute inset-0"
     style={{
@@ -28,7 +28,7 @@ function Projects() {
        ON GOING PROJECTS {" "}
       </h1>
 
-      <div className="grid gap-6 mt-8 lg:grid-cols-2  md:grid-cols-2 grid-cols-1 xl:grid-cols-3 items-center place-items-center ">
+      <div className="grid gap-6 mt-8 lg:grid-cols-2  md:grid-cols-2 grid-cols-1 xl:grid-cols-3 items-center place-items-center  ">
         <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
         <ProjectCard img={img2} title="Wisal-garden" type="Commercial" location="Peshawar"/>
         <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>

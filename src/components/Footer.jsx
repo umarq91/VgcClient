@@ -7,7 +7,7 @@ const Footer = () => {
     class="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
     <div
       class="flex items-center justify-center  border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between ">
-      <div class="mr-12 hidden lg:block">
+      <div class="mr-12 hidden lg:block font-bold">
         <span>Get connected with us on social networks:</span>
       </div>
     
@@ -94,9 +94,9 @@ const Footer = () => {
           </p>
         </div>
    
-        <div class="">
+        <div class=" text-center">
           <h6
-            class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            class="mb-4 flex justify-center font-semibold uppercase md:justify-left ">
             Projects
           </h6>
           <p class="mb-4">
