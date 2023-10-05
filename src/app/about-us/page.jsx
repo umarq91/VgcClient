@@ -7,13 +7,16 @@ import second from '../../public/aboutusbg.avif'
 import manager from "@/public/shahsawar.jpeg"
 import Slider from '@/components/Slider';
 import TeamSlide from '@/components/TeamSlider'
+import video from "../../public/intro.mp4"
 function Aboutus() {
 const content = {
   content:"We are an emerging group of various businesses like real estate development, construction services and planning, corporate brand building, Investment planning, sales & marketing services, and digital services. The group leaders aim to make the best real estate of Pakistan by the integration of modern technology, hardworking team and unique ideas. Thus, the (Vision Group of Companies) will act as the leading smartest Real Estate Company and play its due role in Pakistan's real estate development. The corporations head office is in Peshawar, with a plethora of site offices spreading across the country. Our vision is to become Pakistan's first value-based organization and revolutionize the real estate industry in Pakistan with 100% investor confidence, satisfaction and country-wide projects"
   ,services:"At our marketing agency specializing in real estate, we offer a comprehensive suite of services tailored to meet the evolving needs of our clients in today's dynamic market"
 , vision:"Our vision is to surpass all expectations and become the foremost real estate company in Peshawar by harnessing the power of integrated technology, delivering an exceptional, seamless experience to our valued customers, and leading the industry with innovation and excellence.. Our expertise spans a wide spectrum of offerings, including:"
 ,ceoinfo:"Shahabul-Islam Sahil is the visionary leader at the helm of an organization, responsible for shaping its overall strategic direction and ensuring its successful execution. As the highest-ranking executive, He plays a pivotal role in driving the company's mission, growth, and profitability. Sahil, our esteemed CEO, is a visionary leader who has been instrumental in guiding VISION MARKETING GROUP of COMPANIES to new heights of success. With a distinguished career spanning 5+ years in Peshawar, Sahil has consistently demonstrated a remarkable ability to steer our company towards excellence."
-,mdinfo:"M. Tayyab Khan: Leading the Way in Real Estate and Marketing . In the dynamic world of real estate and marketing, leadership plays a pivotal role in shaping the success of a company. At the helm of your organization stands Mr. M. Tayyab Khan, a visionary leader whose dedication and expertise have propelled the company to new heights."}
+,mdinfo:"M. Tayyab Khan: Leading the Way in Real Estate and Marketing . In the dynamic world of real estate and marketing, leadership plays a pivotal role in shaping the success of a company. At the helm of your organization stands Mr. M. Tayyab Khan, a visionary leader whose dedication and expertise have propelled the company to new heights."
+,managerinfo:"Meet Shahnawaz, an exceptional marketing and real estate manager whose expertise and passion have made him a true leader in the industry. With a track record of success that spans several years, Shahnawaz has proven time and again that he is a force to be reckoned with in the world of real estate and marketing."
+}
 
 
 
@@ -31,9 +34,7 @@ const content = {
           </p>
         </div>
       </div>
-      <video src='../../public/video.mp4'>
-dsfdsf
-      </video>
+
 
       {/* About Us */}
       <h1 className="font-light text-5xl text-center mt-4 text-gray-700 tracking-[16px] underline decoration-orange-500/80">
@@ -162,7 +163,7 @@ dsfdsf
           />
         </div>
         {/* Content */}
-        <div className="mt-5 mx-5 md:w-1/2 lg:1/2  ">
+        <div className="mt-5 mx-5 md:w-1/2 lg:1/2  items-center text-center">
           <h2 className="text-2xl text-orange-600 text-center tracking-[15px] lg:tracking-[2px]">
             {" "}
             MANAGER{" "}
@@ -171,7 +172,8 @@ dsfdsf
             {" "}
             SHAHSAWAR ALI KHAN{" "}
           </h2>
-         
+         <p> {content.managerinfo}
+          </p>
         </div>
       </div>
 
