@@ -1,6 +1,8 @@
 "use client"
 import { useState } from "react";
 import Link from "next/link";
+import logo from '@/public/logo.png'
+import Image from "next/image";
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
@@ -8,9 +10,9 @@ export default function NavBar() {
         <nav className="w-full bg-gray-900 shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 ">
                 <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                    <div className="flex items-center justify-between py-2 md:py-3 md:block">
                         <Link href="/">
-                            <h2 className="text-2xl text-white font-bold">VGC</h2>
+                            <Image  src={logo} width={90} height={90}/>
                         </Link>
                         <div className="md:hidden">
                             <button
@@ -52,11 +54,11 @@ export default function NavBar() {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                        className={`flex-1 justify-self-center  mt-8 md:block md:pb-0 md:mt-0 items-end ${
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="items-center pt-2 justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                        <ul className="items-center text-xl font-lora  justify-center space-y-4 md:flex md:space-x-4 md:space-y-0">
                             <li className="text-white hover:text-blue-600">
                                 <Link href="/">Home</Link>
                             </li>
@@ -65,6 +67,9 @@ export default function NavBar() {
                             </li>
                             <li className="text-white hover:text-blue-600">
                                 <Link href="/projects">Projects</Link>
+                            </li>
+                            <li className="text-white hover:text-blue-600">
+                                <Link href="/projects">Contact Us</Link>
                             </li>
                             
                         </ul>

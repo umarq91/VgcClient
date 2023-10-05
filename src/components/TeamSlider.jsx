@@ -77,7 +77,7 @@ const TeamSlide = () => {
                           fill={true}
                           alt="Project Picture"
                           objectFit="cover"
-                          src={img}
+                          src={person.img}
                           className=""
                         />
                       </div>
@@ -88,7 +88,7 @@ const TeamSlide = () => {
                       <hr />
                       <div className="flex pl-2">
                         <p className="">
-                          Contact No: {person.phone}
+                        Business Developement Officer
                         </p>
                       </div>
                     </div>
