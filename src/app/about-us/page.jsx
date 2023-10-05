@@ -4,7 +4,7 @@ import Image from 'next/image'
 import ceo from "@/assets/ceo.JPG"
 import md from "@/assets/md.JPG"
 import second from '../../public/aboutusbg.avif'
-
+import manager from "@/public/shahsawar.jpeg"
 import Slider from '@/components/Slider';
 import TeamSlide from '@/components/TeamSlider'
 function Aboutus() {
@@ -31,6 +31,9 @@ const content = {
           </p>
         </div>
       </div>
+      <video src='../../public/video.mp4'>
+dsfdsf
+      </video>
 
       {/* About Us */}
       <h1 className="font-light text-5xl text-center mt-4 text-gray-700 tracking-[16px] underline decoration-orange-500/80">
@@ -144,6 +147,35 @@ const content = {
           
         </div>
       </div>
+
+
+
+      <div className="px-12 lg:flex md:flex  lg:px-16 xl:px-16 xl:mx-auto gap-[30px] mt-10">
+        {/* Image */}
+        <div className="items-center md:ml-10 flex mx-auto md:w-1/2 lg:1/3 justify-center">
+          <Image
+            src={manager}
+            alt="image"
+            width={500}
+            height={500}
+            className="rounded-full object-cover md:rounded-lg lg:rounded-lg xl:rounded-xl"
+          />
+        </div>
+        {/* Content */}
+        <div className="mt-5 mx-5 md:w-1/2 lg:1/2  ">
+          <h2 className="text-2xl text-orange-600 text-center tracking-[15px] lg:tracking-[2px]">
+            {" "}
+            MANAGER{" "}
+          </h2>
+          <h2 className="text-3xl text-gray-800 text-center font-semibold tracking-[8px] font-bold font-lora">
+            {" "}
+            SHAHSAWAR ALI KHAN{" "}
+          </h2>
+         
+        </div>
+      </div>
+
+
     </div>
   );
 }
