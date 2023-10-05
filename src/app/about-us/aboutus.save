@@ -34,39 +34,35 @@ const content = {
           </p>
         </div>
       </div>
-
-
       {/* About Us */}
       <h1 className="font-light text-5xl text-center mt-4 text-gray-700 tracking-[16px] underline decoration-orange-500/80">
         {" "}
-        ABOUT COMPANY{" "}
+        ABOUT US{" "}
       </h1>
     
-
-
-      <div className="px-4 flex flex-col mx-auto w-100  max-w-[80%] tracking-[2px] md:max-w-[60%] lg:max-w-[50%]   items-center    gap-[30px]">
+      <div className="px-4 md:flex lg:flex  lg:px-16 xl:px-16 xl:mx-auto gap-[30px]">
         {/* Intro */}
-        <div className="flex-3  ">
-          <h1 className="font-bold text-left text-3xl text-orange-700 mt-4 md:text-4xl lg:text-4xl xl:text-5xl mt-[30px]">
+        <div className="flex-3  md:w-full lg:w-1/2">
+          <h1 className="font-semibold text-center text-3xl text-orange-700 mt-4 md:text-4xl lg:text-4xl xl:text-5xl">
             {" "}
             Who Are We ?{" "}
           </h1>
 
-          <p className="text-md md:text-lg ">{content.content} </p>
+          <p className="text-sm md:text-lg">{content.content} </p>
         </div>
 
         {/* Services */}
-        <div className="flex-2 ">
-          <h2 className="font-bold text-left text-3xl text-orange-700 mt-4 md:text-4xl lg:text-4xl xl:text-5xl mt-[30px]">
+        <div className="flex-2  md:w-full lg:w-1/2">
+          <h2 className="font-semibold text-center text-3xl text-orange-700 mt-4 md:text-4xl lg:text-4xl xl:text-5xl">
             {" "}
             Our Serices & Vision{" "}
           </h2>
           {content.services}
           {content.vision}
-          <h2 className="font-bold text-4xl text-gray-600 tracking-[5px]">
+          <h2 className="font-bold text-2xl text-gray-600 tracking-[5px]">
             Services{" "}
           </h2>
-          <ul className='font-bold'>
+          <ul>
             <li>► Future investment planning </li>
             <li>► Modern housing projects </li>
             <li>► Highrise projects </li>

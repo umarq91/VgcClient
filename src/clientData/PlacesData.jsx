@@ -7,9 +7,6 @@ const  PlacesData=[
     {title:"Wisal Garden",img:'/wisalgarden.jpg',name:'wisal-garden',type:' Mall & Residential'},
     {title:"Darmangi",img:'/darmangi.jpg',name:'darmangi',type:'Residential'},
     {title:"Wisal Garden",img:'/wisalgarden.jpg',name:'wisal-garden',type:'Housing Society'},
-
-
-    
 ]
 
 export default PlacesData
