@@ -31,8 +31,8 @@ export default function Home() {
   </video>
   <div className="absolute inset-0 flex items-center justify-center">
     <div className="text-white text-center">
-      <h1 className="text-6xl font-bold font-lora">Vision Group Of Companies</h1>
-      <p className="text-2xl text-red-700">Private Limited</p>
+      <h1 className="text-6xl font-bold font-serif drop-shadow-lg">Vision Group Of <span className='text-red-800 underline'>Companies </span> </h1>
+      <p className="text-2xl  drop-shadow-lg">Private Limited</p>
     </div>
   </div>
 </div>
