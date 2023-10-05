@@ -130,12 +130,12 @@ const content = {
 
       <br />
       {/* TEAM INFO  */}
-      <div className="mt-20   items-center ">
-        <h1 className="font-semibold text-3xl hidden md:block">Slider ► </h1>
+      <div className="mt-20 w-100  items-center ">
+        
         <h2 className="text-4xl text-center lg:tracking-[2px]">
           {"Business Developement Officers"}
         </h2>
-        <div className='pl-20 items-center justify-center '>
+        <div className=' items-center justify-center '>
           <TeamSlide />
           
         </div>
