@@ -1,4 +1,5 @@
 
+import Footer from '@/components/Footer'
 import NavBar from '../components/Navbar'
 import './globals.css'
 import { Inter ,Poppins,Urbanist, Inconsolata, Lora} from 'next/font/google'
@@ -48,7 +49,7 @@ export default function RootLayout({ children }) {
         {children}
       
         </div>
-       <h1 className='text-2xl item-center flex justify-center'> Footer </h1>
+      <Footer/>
         </body>
     </html>
   )

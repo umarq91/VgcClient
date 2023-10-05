@@ -136,8 +136,8 @@ const content = {
       {/* TEAM INFO  */}
       <div className="mt-20 w-100  items-center ">
         
-        <h2 className="text-4xl text-center lg:tracking-[2px]">
-          {"Business Developement Officers"}
+        <h2 className="text-4xl text-center lg:tracking-[2px] underline-offset-1">
+          {"Business Developement " }<span className='font-bold'> Officers </span>
         </h2>
         <div className=' items-center justify-center '>
           <TeamSlide />

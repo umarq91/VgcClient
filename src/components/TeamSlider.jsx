@@ -71,7 +71,7 @@ const TeamSlide = () => {
                     key={person.id}
                     className="carousel-item-wrapper flex items-center justify-center" // Added this wrapper div with Tailwind CSS classes
                   >
-                    <div className="h-[400px] w-[250px] bg-white shadow-lg flex flex-col cursor-pointer rounded-3xl hover:-translate-y-4 ease-in delay-150 translate-64 drop-shadow-xl">
+                    <div className="h-[400px] w-[270px] bg-white shadow-lg flex flex-col cursor-pointer rounded-3xl hover:-translate-y-4 ease-in delay-150 translate-64 drop-shadow-xl">
                       <div className="h-[70%] relative">
                         <Image
                           fill={true}
