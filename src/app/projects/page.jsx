@@ -29,8 +29,8 @@ function Projects() {
         {" "}
        ON GOING PROJECTS {" "}
       </h1>
-
-      <div className="grid gap-6 mt-8 lg:grid-cols-2  md:grid-cols-2 grid-cols-1 xl:grid-cols-3 items-center place-items-center container mx-auto  max-w-screen-lg ">
+    <div className='  max-w-screen-xl mx-auto '>
+      <div className="grid gap-6 mt-8 lg:grid-cols-2  md:grid-cols-2 grid-cols-1 xl:grid-cols-3 items-center place-items-center ">
         <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
         <ProjectCard img={img2} title="Wisal-garden" type="Commercial" location="Peshawar"/>
         <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
@@ -38,6 +38,10 @@ function Projects() {
         <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
         <ProjectCard img={img2} title="Darmangi" type="Residential" location="Peshawar"/>
       </div>
+
+      </div>
+
+
     </div>
   );
 }
