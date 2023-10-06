@@ -6,17 +6,21 @@ import ProjectCard from '@/components/ProjectCard';
 import img1 from "@/public/project1.avif";
 import img2 from "@/public/project2.avif";
 import AboutUsNew from '@/components/AboutUsNew';
+import Projects from './projects/page';
 
 export default function Home() {
   return (
-    <div className="test max-w-[100vw]">
+    <div className="">
       <LandingPagevideo />
 
       <AboutUsNew/>
 
 
-    <div> <h1 className='text-3xl font-lora '>Featured Projects  </h1> </div>
-      <div className="grid gap-6 mt-20 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:grid-cols-3 items-center place-items-center ">
+    <div> <h1 className='text-3xl font-lora text-center py-10 '>Featured Projects  </h1> </div>
+      
+      
+      
+      <div className="grid gap-6  lg:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:grid-cols-3 items-center place-items-center ">
         <ProjectCard
           img={img1}
           title="Darmangi"
