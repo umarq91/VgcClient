@@ -12,7 +12,7 @@ export default function NavBar() {
                 <div>
                     <div className="flex items-center justify-between py-2 md:py-3 md:block">
                         <Link href="/">
-                            <Image  src={logo} width={90} height={90}/>
+                            <Image  src={logo} width={90} alt="logo" height={90}/>
                         </Link>
                         <div className="md:hidden">
                             <button

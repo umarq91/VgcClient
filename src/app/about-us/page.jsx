@@ -23,7 +23,7 @@ const content = {
   return (
     <div className="">
       <div className="bg-gray-300 min-h-[300px] h-[400px] md:h-[450px]  relative">
-        <Image fill={true} className="object-cover" src={second} />
+        <Image fill={true} className="object-cover" alt='image' src={second} />
         <div className="min-h-[80px] w-1/2 min-w-1/3 bg-gray-900 absolute bottom-10 lg:min-w-1/3">
           <h1 className="text-white text-3xl font-poppins  pl-6 font-bold items-center">
             About Us{" "}

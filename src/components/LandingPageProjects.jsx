@@ -6,7 +6,7 @@ const LandingPageProjects = () => {
     <div>
   {PlacesData && PlacesData.length> 0 &&
       PlacesData.map((place)=>(
-        <ProjectsSlider img={place.img} type={place.type} title={place.title} location={"Peshawar"}/>
+        <ProjectsSlider key={place.name} img={place.img} type={place.type} title={place.title} location={"Peshawar"}/>
         
       ))
       }

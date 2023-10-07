@@ -66,7 +66,7 @@ const ProjectsSlider = () => {
               places.length > 0 &&
               places.map((place) => {
                 return (
-                  <div className="h-[400px] w-[270px] bg-white shadow-lg flex flex-col cursor-pointer rounded-3xl   drop-shadow-xl">
+                  <div key={place.name} className="h-[400px] w-[270px] bg-white shadow-lg flex flex-col cursor-pointer rounded-3xl   drop-shadow-xl">
                   <div className="h-[70%] relative">
                     <Image
                       fill={true}
