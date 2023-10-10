@@ -15,7 +15,7 @@ const AboutUsNew = () => {
     <div className='bg-gray-200 shadow-lg drop-shadow-2xl'>
         
       {/* About Us */}
-      <h1 className="font-light text-3xl lg:text-5xl text-center mt-4 text-gray-700 tracking-[2px] underline decoration-red-500 font-lora">
+      <h1 className="font-light text-2xl lg:text-5xl text-center mt-4 text-gray-700 tracking-[2px] underline decoration-red-500 font-lora">
         {" "}
        COMPANY INTRODCUTION{" "}
       </h1>
