@@ -10,6 +10,7 @@ const Footer = () => {
       <div class="mr-12 hidden lg:block font-bold">
         <span>Get connected with us on social networks:</span>
       </div>
+      <span className='font-medium text-xl pr-10  md:hidden lg:hidden xl:hidden'> Socials : </span>
     
       <div class="flex justify-center">
      
