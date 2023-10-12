@@ -1,7 +1,6 @@
 "use client";
 import React from 'react';
 import LandingPagevideo from '@/components/LandingPagevideo';
-import AboutUs from '../components/AboutUs';
 import ProjectCard from '@/components/ProjectCard';
 import AboutUsNew from '@/components/AboutUsNew';
 import Projects from './projects/page';
@@ -16,7 +15,7 @@ export default function Home() {
       <AboutUsNew/>
 
 
-    <div> <h1 className='text-3xl font-lora text-center py-10 '>Featured Projects  </h1> </div>
+    <div> <h1 className='font-light text-2xl lg:text-5xl text-center mt-4 text-gray-700 tracking-[2px] underline decoration-red-500 font-lora text-center py-10  '> FEATURED PROJECTS </h1> </div>
       
       
 

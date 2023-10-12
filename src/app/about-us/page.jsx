@@ -157,8 +157,8 @@ const content = {
           <Image
             src={manager}
             alt="image"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             className="rounded-full object-cover md:rounded-lg lg:rounded-lg xl:rounded-xl"
           />
         </div>
@@ -166,7 +166,7 @@ const content = {
         <div className="mt-5 mx-5 md:w-1/2 lg:1/2  items-center text-center">
           <h2 className="text-2xl text-orange-600 text-center tracking-[15px] lg:tracking-[2px]">
             {" "}
-            MANAGER{" "}
+           BRANCH MANAGER{" "}
           </h2>
           <h2 className="text-3xl text-gray-800 text-center font-semibold tracking-[8px] font-bold font-lora">
             {" "}

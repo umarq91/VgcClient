@@ -101,8 +101,8 @@ const Footer = () => {
             Projects
           </h6>
           <p class="mb-4">
-            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-              > Wisal Garden </a
+            <Link href="/projects/wisal-garden" class="text-neutral-600 dark:text-neutral-200"
+              > Wisal Garden </Link
             >
           </p>
           <p class="mb-4">
