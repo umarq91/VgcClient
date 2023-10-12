@@ -57,7 +57,7 @@ const content = {
         <div className="">
           <h2 className="font-bold text-left text-5xl text-orange-700 mt-4 md:text-4xl lg:text-4xl xl:text-5xl mt-[30px]">
             {" "}
-            Our Serices & Vision{" "}
+            Our Services & Vision{" "}
           </h2>
           {content.services}
           {content.vision}
