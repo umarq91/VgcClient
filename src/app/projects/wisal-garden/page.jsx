@@ -4,7 +4,8 @@ import introvideo from "@/public/projects/wisalgarden.mp4"
 import { useState, useEffect } from "react";
 import Link from 'next/link';
 import Image from 'next/image';
-
+import schedule from '@/public/projects/wgimage.jpeg'
+import styles from  "./style.module.css"
 
 const WisalGarden = () => {
   const latitude = 34.07059623159645;
@@ -20,9 +21,9 @@ const WisalGarden = () => {
 
 
   return (
-    <>
+    <div className={styles.body} id='' >
       {/* Top  */}
-      <div className=" h-[300px] xl:h-[500px] md:h-[450px] w-full relative">
+      <div className=" h-[300px] xl:h-[500px] md:h-[450px] w-full relative ">
         <div
           className="absolute inset-0"
           style={{
@@ -64,9 +65,6 @@ const WisalGarden = () => {
           </video>
         </div>
 
-
-        <hr className="pt-20 mt-10 opacity-70 innerWidth" />
-
         <hr className="pt-20 mt-10 opacity-70 innerWidth" />
 
         {/* Location */}
@@ -86,7 +84,7 @@ const WisalGarden = () => {
             <p>
               Project Wisal Garden is located at ideal and prime location in the
               city. Residents get the liberty of quick and easy access to
-              various locations <br/>
+              various locations <br />
               <span className="font-bold"> 5 minutes From Motorway </span>
             </p>
 
@@ -132,8 +130,25 @@ const WisalGarden = () => {
             ></iframe>
           </div>
         </div>
+
+        <hr className="pt-20 mt-10 opacity-70 innerWidth" />
+
+        <div className="mt-5 md:mt-24 mx-5  items-center">
+          <h2 className="text-5xl text-orange-600 text-center tracking-[5px] font-lora">
+            {" "}
+            SCHEDULE{" "}
+          </h2>
+
+          <div className='w-full items-center flex justify-center '>
+            <div className="relative w-full h-[500px] md:w-[500px]">
+              <Image src={schedule} fill={true} />
+            </div>
+          </div>
+
+
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
