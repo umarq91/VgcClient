@@ -44,7 +44,7 @@ export default function Home() {
         />
       </div> */}
 
-      <hr className="pt-20 mt-10 opacity-70 innerWidth" />
+     
     </div>
   );
 }

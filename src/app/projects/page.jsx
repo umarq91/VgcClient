@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import img1 from "@/public/project1.avif";
 import img2 from "@/public/project2.avif";
+import PlacesData from '@/clientData/PlacesData';
 
 
 function Projects() {
@@ -31,12 +32,16 @@ function Projects() {
       </h1>
     <div className='  max-w-screen-xl mx-auto '>
       <div className="grid gap-6 mt-8 lg:grid-cols-2  md:grid-cols-2 grid-cols-1 xl:grid-cols-3 items-center place-items-center ">
-        <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
+      {PlacesData.map((item) => (
+  <ProjectCard place={item} key={item.id} />
+))}
+
+        {/* <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
         <ProjectCard img={img2} title="Wisal-garden" type="Commercial" location="Peshawar"/>
         <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
         <ProjectCard img={img2} title="Darmangi" type="Residential" location="Peshawar"/>
         <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
-        <ProjectCard img={img2} title="Darmangi" type="Residential" location="Peshawar"/>
+        <ProjectCard img={img2} title="Darmangi" type="Residential" location="Peshawar"/> */}
       </div>
 
       </div>
