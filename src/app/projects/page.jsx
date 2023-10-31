@@ -4,7 +4,9 @@ import React from 'react'
 import img1 from "@/public/project1.avif";
 import img2 from "@/public/project2.avif";
 import PlacesData from '@/clientData/PlacesData';
-
+import wisalGarden from "@/assets/projects/wisalgarden.jpeg"
+import styles from "./styles.module.css"
+import Link from 'next/link';
 
 function Projects() {
   return (
@@ -30,18 +32,32 @@ function Projects() {
         {" "}
        ON GOING PROJECTS {" "}
       </h1>
-    <div className='  max-w-screen-xl mx-auto '>
-      <div className="grid gap-6 mt-8 lg:grid-cols-2  md:grid-cols-2 grid-cols-1 xl:grid-cols-3 items-center place-items-center ">
-      {PlacesData.map((item) => (
-  <ProjectCard place={item} key={item.id} />
-))}
+    <div className='  max-w-screen-xl mx-auto my-4'>
+      <div className="grid gap-6 mt-8 lg:grid-cols-2  md:grid-cols-2 grid-cols-1 xl:grid-cols-2 items-center place-items-center ">
 
-        {/* <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
-        <ProjectCard img={img2} title="Wisal-garden" type="Commercial" location="Peshawar"/>
-        <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
-        <ProjectCard img={img2} title="Darmangi" type="Residential" location="Peshawar"/>
-        <ProjectCard img={img1} title="Darmangi" type="Residential" location="Peshawar"/>
-        <ProjectCard img={img2} title="Darmangi" type="Residential" location="Peshawar"/> */}
+      {/* {PlacesData.map((item) => (
+  <ProjectCard place={item} key={item.id} />
+))} */}
+
+
+        <Link href={"/projects/wisal-garden"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-110 transition-transform transition-duration-300 "}>
+          <Image  src={wisalGarden} fill={true} objectFit="cover" objectPosition='center'/>
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
+        </Link>
+
+
+
+        <Link href={"/projects/wisal-garden"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
+          <Image  src={wisalGarden} fill={true} objectFit="cover" objectPosition='center'/>
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
+        </Link>
+
+
+
+
+
+
+
       </div>
 
       </div>

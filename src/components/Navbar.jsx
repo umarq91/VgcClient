@@ -7,12 +7,12 @@ export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-gray-900 shadow sticky">
+        <nav className="w-full bg-white shadow sticky">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 ">
                 <div>
-                    <div className="flex items-center justify-between py-2 md:py-3 md:block">
+                    <div className="flex items-center justify-between  md:py-3 md:block">
                         <Link href="/">
-                            <Image  src={logo} width={90} alt="logo" height={90}/>
+                            <Image  src={logo} width={50} alt="logo" height={30}/>
                         </Link>
                         <div className="md:hidden">
                             <button
@@ -54,23 +54,21 @@ export default function NavBar() {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center  mt-8 md:block md:pb-0 md:mt-0 items-end ${
+                        className={`flex-1 justify-self-center   md:block md:pb-0 md:mt-0 items-end ${
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="items-center text-xl font-lora  justify-center space-y-4 md:flex md:space-x-4 md:space-y-0">
-                            <li className="text-white hover:text-blue-600">
-                                <Link href="/">Home</Link>
+                        <ul className="text-xl text-black space-y-4 md:flex md:space-x-4 md:space-y-0 gap-8">
+                            <li className=" hover:text-blue-600">
+                                <Link href="/">HOME</Link>
                             </li>
-                            <li className="text-white hover:text-blue-600">
-                                <Link href="/about-us">About us</Link>
+                            <li className=" hover:text-blue-600">
+                                <Link href="/about-us">About</Link>
                             </li>
-                            <li className="text-white hover:text-blue-600">
+                            <li className=" hover:text-blue-600">
                                 <Link href="/projects">Projects</Link>
                             </li>
-                            <li className="text-white hover:text-blue-600">
-                                <Link href="/projects">Contact Us</Link>
-                            </li>
+                          
                             
                         </ul>
                     </div>
