@@ -6,6 +6,7 @@ import projectsData from '@/clientData/projectsData';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from  "./style.module.css"
+import wisalGarden from "@/assets/projects/wisalgarden.jpeg"
 
 function SingleProject() {
   const [data, setdata] = useState(null);
@@ -68,10 +69,57 @@ function SingleProject() {
      
 
     
-      <div className="mx-8 md:mx-16 mx-auto max-w-[100vw]">
+      <div className="mx-10  mx-auto max-w-screen-lg mx-auto bg-white">
+
+          {/* TEST */}
+          <div className='my-10 '>
+          <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold font-openSans mb-4 text-gray-900'> {data?.title} - Peshawar </h1>
+          <div className='max-h-[400px] h-[400px] relative'>
+           <Image src={wisalGarden} fill={true} objectFit='cover' />
+            </div>
+
+            <h2 className='text-4xl text-gray-900 font-bold mt-8 mb-10'> Overview | <span className="text-blue-900 mb-10">Project Information  </span>  </h2>
+
+            <table className='w-full  h-full' style={{ borderSpacing: '20px 10px' }}>
+  <tbody className='text-left'>
+    <tr className='hover:bg-gray-200 ' style={{ borderBottom: '1px solid lightgray' }}>
+      <th>Locality</th>
+      <td>{data?.info?.locality}</td>
+    </tr>
+    <tr className='hover:bg-gray-200 ' style={{ borderBottom: '1px solid lightgray' }}>
+      <th>City</th>
+      <td>{data?.info?.city}</td>
+    </tr>
+    <tr className='hover:bg-gray-200 ' style={{ borderBottom: '1px solid lightgray' }}>
+      <th>Type</th>
+      <td>{data?.info?.type}</td>
+    </tr>
+    <tr className='hover:bg-gray-200' style={{ borderBottom: '1px solid lightgray' }}>
+      <th>Developer</th>
+      <td>{data?.info?.developer}</td>
+    </tr>
+    <tr className='hover:bg-gray-200' style={{ borderBottom: '1px solid lightgray' }}>
+      <th>Payment Plan</th>
+      <td>{data?.info?.paymentplan}</td>
+    </tr>
+    <tr className='hover:bg-gray-200' style={{ borderBottom: '1px solid lightgray' }}>
+      <th>Accepted payment mode</th>
+      <td>{data?.info?.paymentmodes}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+            </div>
+
+
+
+
+
+
       {data?.openingvideo && (
         <div>
-          <h1 className="font-light text-3xl md:text-4xl lg:text-5xl xl:text-5xl mt-16 text-center mt-4 text-gray-700 tracking-[2px] underline decoration-orange-500/80 mb-8 ">
+          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-5xl mt-16  mt-4 text-gray-700 tracking-[2px]  mb-1 ">
             {" "}
             Grand Opening{" "}
           </h1>
@@ -87,14 +135,13 @@ function SingleProject() {
           </video>
         </div>
       )}
-        <hr className="pt-20 mt-10 opacity-70 innerWidth" />
-
+   
         {/* Location */}
 
         <div className="px-12 lg:flex md:flex lg:px-16 xl:px-16 xl:mx-auto gap-[30px] mt-10 bg-gray-100 shadow-lg rounded-lg">
           {/* Content */}
           <div className="mt-5 md:mt-24 mx-5 md:w-1/2 lg:w-1/2 data?s-center flex-1">
-            <h2 className="text-5xl text-orange-600 text-center tracking-[5px] font-lora">
+            <h2 className="text-5xl  mb-2 text-center tracking-[5px] font-lora">
               {" "}
               Location{" "}
             </h2>
@@ -105,10 +152,11 @@ function SingleProject() {
 
             <p>
              {data?.locationdescription} <br />
+             <p className='font-bold'> {data?.info?.locality} </p>
               {/* <span className="font-bold"> 5 minutes From Motorway </span> */}
             </p>
 
-            <Link
+            {/* <Link
               href={data?.location|| ""}
               className=" flex data?s-center justify-center"
             >
@@ -135,33 +183,43 @@ function SingleProject() {
                 </svg>
                 Get Directions{" "}
               </button>
-            </Link>
+            </Link> */}
           </div>
 
           <div className="data?s-center md:ml-10 py-10 flex mx-auto md:w-1/2 lg:w-1/3 justify-center flex-1 relative ">
-            {/* <iframe
-              src={mapSrc}
-              width="100%"
-              height="400px"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Google Map"
-            ></iframe> */}
             <Image src={googlemap} width={800 } height={900} className='relative'/>
             <Link
               href={data?.location || ""}
               className=" flex data?s-center justify-center"
             >
-              <button className="text-white hidden sm:block absolute top-[50%] left-[35%] text-lg  bg-gray-600  hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-7 py-2.5  dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+             <button className="text-white text-lg flex bg-blue-600 mt-10 absolute left-[30%] top-[40%] hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-7 py-2.5  dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
                 {" "}
-                Open Map{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-4 h-4"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                  />
+                </svg>
+                Get Directions{" "}
               </button>
             </Link>
           </div>
         </div>
 
-        <hr className="pt-20 mt-10 opacity-70 innerWidth" />
+        <hr className="pt-10 mt-4 opacity-70 innerWidth" />
 
 
 
