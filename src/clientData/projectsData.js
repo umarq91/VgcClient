@@ -6,6 +6,8 @@ import orchardSquare from "@/public/projects/orchardsquare.jpg"
 import vision21sc from "@/public/projects/visionsc.jpg"
 import vision21video from "@/public/projects/vision21video.mp4"
 import visionmodeltown from "@/public/projects/visionmodeltown.jpeg"
+import enclave from "@/public/projects/encalve.jpg"
+
     const projectsData = [
         {
         name:"wisal-garden",
@@ -25,21 +27,13 @@ import visionmodeltown from "@/public/projects/visionmodeltown.jpeg"
 
     },
     {
-        "name":"vision-enclave",
-        "locationdescription":"Project Vision enclave is located at ideal and prime location in thecity. Residents get the liberty of quick and easy access tovarious locations ",
-        "location":"https://www.google.com/maps/dir//34.023915,71.447572/@34.023915,71.447572,17z?entry=ttu",
-        "schedule":visionscedule,
-        "schedule2":visionschedule2
-
-    },
-    {
         name:"vision-orchard-square",
         title:"Vision Orchard Square",
-        locationdescription:"Project Wisal Garden is located at ideal and prime location in thecity. Residents get the liberty of quick and easy access tovarious locations",
+        locationdescription:"Project Orchard Square is located at ideal and prime location in thecity. Residents get the liberty of quick and easy access tovarious locations",
         location:"https://www.google.com/maps/dir//34.051685,71.528664/@34.051685,71.528664,17z?entry=ttu",
         schedule:orchardSquare,
         info:{
-             locality:"Budhi pull fakeer kaly road darmangi warsak road peshawar",
+             locality:"Opposite askari 6 near rabbani heights nasar Bagh road Peshawar",
             city:"Peshawar",
             type:"Commericial and Residential",
             developer:"Vision Group of Companies",
@@ -81,7 +75,22 @@ import visionmodeltown from "@/public/projects/visionmodeltown.jpeg"
             paymentmodes:"Bank transfer,cheque"
 
         }
+    },
+    {
+        name:"vision-enclave",
+        title:"Vision Enclave",
+        locationdescription:"ProjectVision Enclave is located at ideal and prime location in thecity. Residents get the liberty of quick and easy access tovarious locations",
+        location:"https://www.google.com/maps/dir//34.023915,71.447572/@34.023915,71.447572,17z?entry=ttu",
+        schedule:enclave,
+        info:{
+             locality:"Near dhera kati khel nowshehra",
+            city:"Nowshera",
+            type:"Commericial and Residential",
+            developer:"Vision Group of Companies",
+            paymentplan:"3 years Installment plan ",
+            paymentmodes:"Bank transfer,cheque"
 
+        }
     },
 
 
