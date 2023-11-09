@@ -4,8 +4,8 @@ import visionscedule from "@/public/projects/vision-enlaveschedule.jpeg"
 import visionschedule2 from "@/public/projects/schedule2.jpeg"
 import orchardSquare from "@/public/projects/orchardsquare.jpg"
 import vision21sc from "@/public/projects/visionsc.jpg"
-
-
+import vision21video from "@/public/projects/vision21video.mp4"
+import visionmodeltown from "@/public/projects/visionmodeltown.jpeg"
     const projectsData = [
         {
         name:"wisal-garden",
@@ -55,6 +55,7 @@ import vision21sc from "@/public/projects/visionsc.jpg"
         locationdescription:"Project Vision 21 is located at ideal and prime location in thecity. Residents get the liberty of quick and easy access tovarious locations",
         location:"https://www.google.com/maps/dir//34.041746,71.643355/@34.041746,71.643355,17z?entry=ttu",
         schedule:vision21sc,
+        openingvideo:vision21video,
         info:{
              locality:"Near government college wadpaga dalazak road peshawar",
             city:"Peshawar",
@@ -64,8 +65,25 @@ import vision21sc from "@/public/projects/visionsc.jpg"
             paymentmodes:"Bank transfer,cheque"
 
         }
+    },
+    {
+        name:"vision-model-town-nowshera",
+        title:"Vision Model Town",
+        locationdescription:"Project Model Town Nowshera is located at ideal and prime location in thecity. Residents get the liberty of quick and easy access tovarious locations",
+        location:"https://www.google.com/maps/dir//33.989683,72.035173/@33.989683,72.035173,17z?entry=ttu",
+        schedule:visionmodeltown,
+        info:{
+             locality:"Near dhera kati khel nowshehra",
+            city:"Nowshera",
+            type:"Commericial and Residential",
+            developer:"Vision Group of Companies",
+            paymentplan:"3 years Installment plan ",
+            paymentmodes:"Bank transfer,cheque"
 
-    }
+        }
+
+    },
+
 
 ]
 export default projectsData;

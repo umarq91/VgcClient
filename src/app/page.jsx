@@ -10,7 +10,7 @@ import LandingPageProjects from '@/components/LandingPageProjects';
 import Hero from '@/components/Hero';
 export default function Home() {
   return (
-    <div className="">
+    <div className=" md:min-w-[100vw] max-w-[95vw]  sm:w-full overflow-hidden">
       <Hero/>
       <LandingPagevideo />
 

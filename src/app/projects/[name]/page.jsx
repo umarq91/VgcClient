@@ -8,6 +8,8 @@ import Image from 'next/image';
 import styles from  "./style.module.css"
 import wisalGarden from "@/assets/projects/wisalgarden.jpeg"
 
+
+
 function SingleProject() {
   const [data, setdata] = useState(null);
   const params = useParams();

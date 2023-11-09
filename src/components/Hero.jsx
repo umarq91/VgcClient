@@ -6,7 +6,7 @@ import {motion} from "framer-motion"
 function Hero() {
 
   return (
-    <section className="hero-wrapper  pb-4  max-w-[90vw] mx-auto bg-white rounded-tl-full shadow-lg">
+    <section className="hero-wrapper  pb-4  sm:max-w-[90vw] mx-auto bg-white rounded-tl-full shadow-lg">
       {/* container */}
       <div className="flex  flex-wrap items-center gap-[25px]">
         {/* Left */}
@@ -23,7 +23,7 @@ function Hero() {
                   duration: 3,
                   type: "spring",
                 }}
-              className="hero-title  text-center  font-bold text-5xl lg:text-7xl lg:pb-10 md:text-6xl sm:text-5xl  leading-2 z-40"
+              className="hero-title  text-center  md:text-left font-bold text-5xl lg:text-7xl lg:pb-10 md:text-6xl sm:text-5xl  leading-2 z-40"
             >
               <h1 className="leading-[45px] sm:leading-[60px] z-20">
                 Vision <br />
@@ -66,7 +66,7 @@ function Hero() {
                 href={
                   "https://www.google.com/maps/place/MMC+General+Hospital/@34.0337191,71.6001506,19.22z/data=!4m6!3m5!1s0x38d93da3b8f429cb:0xbd5735e90857000!8m2!3d34.0336891!4d71.600201!16s%2Fg%2F1yg4vbl8m?entry=ttu"
                 }
-                className="w-[30%] hover:bg-black md:w-[130px] border-black border-2 rounded-full   flex items-center justify-center hover:scale-110 transition ease-in"
+                className="w-[50%] hover:bg-black md:w-[130px] border-black border-2 rounded-full   flex items-center justify-center hover:scale-110 transition ease-in"
               > 
                 <svg
                   className="pb-1 hover:scale-110 transition ease-in"
@@ -133,7 +133,7 @@ function Hero() {
 
         {/* Right */}
 
-        <div className="hero-right  flex flex-1 justify-center items-center w-full relative ">
+        <div className="hero-right  max-w-[90vw] flex flex-1 justify-center items-center w-full relative ">
           <motion.div
             initial={{ x: "2rem", opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -141,15 +141,22 @@ function Hero() {
               duration: 3,
               type: "spring",
             }}
-            className="w-[600px] sm:w-[400px] md:w-[500px] relative h-[550px] lg:h-[550px] lg:mt-2  mt-8 overflow-hidden rounded-tl-3xl  border-opacity-[24] "
+            className="w-[400px]  sm:w-[400px] md:w-[500px] relative h-[550px] lg:h-[550px] lg:mt-2  mt-8 overflow-hidden rounded-tl-3xl  border-opacity-[24] "
           >
             
-              <Image
+              {/* <Image
                 alt="c"
-                className="w-full  object-cover opacity-70"
-                fill={true}
-
+                className="w-full hide object-cover object-cover opacity-70"
+             objectFit="cover"
+             
+              fill={true}
                 src={img}
+              /> */}
+              <Image 
+              src={img}
+              alt=""
+              objectFit="cover"
+              className="w-full h-full object-cover"
               />
            
           </motion.div>
