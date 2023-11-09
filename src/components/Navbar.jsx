@@ -60,7 +60,7 @@ export default function NavBar() {
                     >
                         <ul className="text-xl text-black space-y-4 md:flex md:space-x-4 md:space-y-0 gap-8">
                             <li className=" hover:text-blue-600">
-                                <Link href="/">HOME</Link>
+                                <Link href="/">Home</Link>
                             </li>
                             <li className=" hover:text-blue-600">
                                 <Link href="/about-us">About</Link>

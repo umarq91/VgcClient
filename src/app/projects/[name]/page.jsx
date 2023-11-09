@@ -145,16 +145,13 @@ function SingleProject() {
               {" "}
               Location{" "}
             </h2>
-            {/* <h2 className="text-3xl text-gray-800 text-center font-bold font-lora tracking-[2px]">
-            {" "}
-            Shahabul-Islam Sahil{" "}
-          </h2> */}
+      
 
             <p>
              {data?.locationdescription} <br />
+            </p>
              <p className='font-bold'> {data?.info?.locality} </p>
               {/* <span className="font-bold"> 5 minutes From Motorway </span> */}
-            </p>
 
             {/* <Link
               href={data?.location|| ""}
