@@ -5,6 +5,7 @@ import img1 from "@/public/project1.avif";
 import img2 from "@/public/project2.avif";
 import PlacesData from '@/clientData/PlacesData';
 import wisalGarden from "@/assets/projects/wisalgarden.jpeg"
+import vision21 from "@/public/projects/vision21.jpg"
 import styles from "./styles.module.css"
 import Link from 'next/link';
 
@@ -50,6 +51,12 @@ function Projects() {
           <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
         </Link>
 
+
+
+        <Link href={"/projects/vision-21"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
+          <Image  src={vision21} fill={true} objectFit="cover" objectPosition='top'/>
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
+        </Link>
 
 
 

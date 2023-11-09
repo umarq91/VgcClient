@@ -3,6 +3,9 @@ import wisalgardebnschedule from '@/public/projects/wgimage.jpeg'
 import visionscedule from "@/public/projects/vision-enlaveschedule.jpeg"
 import visionschedule2 from "@/public/projects/schedule2.jpeg"
 import orchardSquare from "@/public/projects/orchardsquare.jpg"
+import vision21sc from "@/public/projects/visionsc.jpg"
+
+
     const projectsData = [
         {
         name:"wisal-garden",
@@ -37,6 +40,23 @@ import orchardSquare from "@/public/projects/orchardsquare.jpg"
         schedule:orchardSquare,
         info:{
              locality:"Budhi pull fakeer kaly road darmangi warsak road peshawar",
+            city:"Peshawar",
+            type:"Commericial and Residential",
+            developer:"Vision Group of Companies",
+            paymentplan:"3 years Installment plan ",
+            paymentmodes:"Bank transfer,cheque"
+
+        }
+
+    },
+    {
+        name:"vision-21",
+        title:"Vision 21",
+        locationdescription:"Project Vision 21 is located at ideal and prime location in thecity. Residents get the liberty of quick and easy access tovarious locations",
+        location:"https://www.google.com/maps/dir//34.041746,71.643355/@34.041746,71.643355,17z?entry=ttu",
+        schedule:vision21sc,
+        info:{
+             locality:"Near government college wadpaga dalazak road peshawar",
             city:"Peshawar",
             type:"Commericial and Residential",
             developer:"Vision Group of Companies",
