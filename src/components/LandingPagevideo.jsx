@@ -2,6 +2,7 @@
 import React from "react";
 import video from "@/public/intro.mp4";
 import { useState, useEffect } from "react";
+import {motion} from "framer-motion"
 const LandingPagevideo = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const handleVideoPlay = () => {
@@ -12,7 +13,8 @@ const LandingPagevideo = () => {
     setIsVideoPlaying(true);
   }, []);
   return (
-    <div>
+    <motion.div initial={{ x: "2rem", opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
+    viewport={{ once: true }} transition={{ duration: 3, type: "spring" }}>
       <div className="relative h-[100vh]">
         {isVideoPlaying ? (
           //  Video and layout div
@@ -59,7 +61,7 @@ const LandingPagevideo = () => {
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

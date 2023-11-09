@@ -7,9 +7,11 @@ import Projects from './projects/page';
 import ProjectsSlider from '@/components/ProjectsSlider';
 
 import LandingPageProjects from '@/components/LandingPageProjects';
+import Hero from '@/components/Hero';
 export default function Home() {
   return (
     <div className="">
+      <Hero/>
       <LandingPagevideo />
 
       <AboutUsNew/>

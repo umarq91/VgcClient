@@ -1,7 +1,8 @@
 import Image from "next/image";
 import WhatsAppButton from "./Button";
 import { useState } from "react";
-
+import img from "@/assets/team.png"
+import {motion} from "framer-motion"
 function Hero() {
 
   return (
@@ -15,20 +16,29 @@ function Hero() {
           {/* <div className="h-16 w-16 absolute   bg-blue-300 rounded-full" /> */}
          
           <div className="hero-left flex flex-col justify-center">
-            <div
-              variants={""}
-              initial="hidden"
-              animate={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="hero-title  font-bold text-5xl lg:text-7xl lg:pb-10 md:text-6xl sm:text-5xl  leading-4 z-40"
+            <motion.div
+                initial={{ x: "-2rem", opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  duration: 3,
+                  type: "spring",
+                }}
+              className="hero-title  text-center  font-bold text-5xl lg:text-7xl lg:pb-10 md:text-6xl sm:text-5xl  leading-2 z-40"
             >
-              <h1 className="leading-[60px]  z-20">
+              <h1 className="leading-[45px] sm:leading-[60px] z-20">
                 Vision <br />
-                <span className="font-normal">group of </span> <br /> companies
+                <span className="font-normal">Group of </span> <br /> <span className="text-orange-700"> Companies</span> 
               </h1>
-            </div>
+            </motion.div>
 
-            <div className="hero-descr flex flex-col justify-end text-sm opacity-70 italic">
+            <motion.div
+              initial={{ x: "-2rem", opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                duration: 3,
+                type: "spring",
+              }}
+            className="hero-descr flex flex-col justify-end text-sm opacity-70 italic">
               <span className="font-semibold italic">
                 We are an emerging group of various businesses like real estate
                 development, construction services and planning, corporate brand
@@ -37,9 +47,18 @@ function Hero() {
                 estate of Pakistan by the integration of modern technology,
                 hardworking team and unique ideas.
               </span>
-            </div>
+            </motion.div>
 
-            <div className="flex mt-4  ml-10">
+            <motion.div 
+              initial={{ x: "2rem", opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                duration: 3,
+                type: "spring",
+              }}
+            
+            
+            className="flex mt-4  ml-10">
               {/* Button for Our Location */}
 
               <a
@@ -108,15 +127,15 @@ function Hero() {
                 Projects ►
                 </span>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
 
         {/* Right */}
 
         <div className="hero-right  flex flex-1 justify-center items-center w-full relative ">
-          <div
-            initial={{ x: "10rem", opacity: 0 }}
+          <motion.div
+            initial={{ x: "2rem", opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
               duration: 3,
@@ -128,12 +147,12 @@ function Hero() {
               <Image
                 alt="c"
                 className="w-full  object-cover opacity-70"
-            fill={true}
+                fill={true}
 
-                src="https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2067&q=80"
+                src={img}
               />
            
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
