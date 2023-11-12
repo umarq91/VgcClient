@@ -89,8 +89,28 @@ import enclave from "@/public/projects/encalve.jpg"
             developer:"Vision Group of Companies",
             paymentplan:"3 years Installment plan ",
             paymentmodes:"Bank transfer,cheque"
-
-        }
+        },
+        gallery:[
+            {}
+        ]
+    },
+    {
+        name:"vision-enclave",
+        title:"Vision Enclave",
+        locationdescription:"ProjectVision Enclave is located at ideal and prime location in thecity. Residents get the liberty of quick and easy access tovarious locations",
+        location:"https://www.google.com/maps/dir//34.023915,71.447572/@34.023915,71.447572,17z?entry=ttu",
+        schedule:enclave,
+        info:{
+             locality:"Near dhera kati khel nowshehra",
+            city:"Nowshera",
+            type:"Commericial and Residential",
+            developer:"Vision Group of Companies",
+            paymentplan:"3 years Installment plan ",
+            paymentmodes:"Bank transfer,cheque"
+        },
+        gallery:[
+            {}
+        ]
     },
 
 

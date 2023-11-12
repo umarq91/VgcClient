@@ -12,7 +12,7 @@ import enclaveprofile from "@/public/projects/enclaveprofile.jpg"
 
 function Projects() {
   return (
-    <div className="mt-1">
+    <div className="mt-1 max-w-[100vw]">
      <div className=" h-[400px] xl:h-[500px] md:h-[450px] w-full relative">
   <div
     className="absolute inset-0"

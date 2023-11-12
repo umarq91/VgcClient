@@ -6,9 +6,9 @@ import {motion} from "framer-motion"
 function Hero() {
 
   return (
-    <section className="hero-wrapper  pb-4  sm:max-w-[90vw] mx-auto bg-white rounded-tl-full shadow-lg">
+    <section className="hero-wrapper  pb-4  p-4 max-w-[90vw] mx-auto bg-white rounded-tl-full shadow-lg">
       {/* container */}
-      <div className="flex  flex-wrap items-center gap-[25px]">
+      <div className="flex sm:flex-row flex-wrap flex-reverse  flex-col items-center gap-[25px]">
         {/* Left */}
         <div className="flex-1 relative">
           {/* <div className="h-24 w-24  absolute   top-10 bg-orange-300 rounded-full" /> */}
@@ -133,7 +133,7 @@ function Hero() {
 
         {/* Right */}
 
-        <div className="hero-right  max-w-[90vw] flex flex-1 justify-center items-center w-full relative ">
+        <div className="hero-right  max-w-[100vw] flex flex-1 justify-center items-center w-full relative ">
           <motion.div
             initial={{ x: "2rem", opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -141,7 +141,7 @@ function Hero() {
               duration: 3,
               type: "spring",
             }}
-            className="w-[400px]  sm:w-[400px] md:w-[500px] relative h-[550px] lg:h-[550px] lg:mt-2  mt-8 overflow-hidden rounded-tl-3xl  border-opacity-[24] "
+            className="w-[400px]  sm:w-[400px] md:w-[500px]  h-[550px] lg:h-[550px] lg:mt-2  mt-8 overflow-hidden rounded-tl-3xl  border-opacity-[24] "
           >
             
               {/* <Image
@@ -154,9 +154,10 @@ function Hero() {
               /> */}
               <Image 
               src={img}
+              fill={true}
               alt=""
               objectFit="cover"
-              className="w-full h-full object-cover"
+              // className="w-full h-full object-cover"
               />
            
           </motion.div>

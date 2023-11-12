@@ -15,7 +15,7 @@ const LandingPagevideo = () => {
   return (
     <motion.div initial={{ x: "2rem", opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
     viewport={{ once: true }} transition={{ duration: 3, type: "spring" }}>
-      <div className="relative h-[100vh]  sm:max-w-[95vw]  flex justify-center items-center">
+      <div className="relative h-[100vh]  max-w-[100vw]  flex justify-center items-center">
         {isVideoPlaying ? (
           //  Video and layout div
           <>
