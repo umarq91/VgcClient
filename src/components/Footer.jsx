@@ -106,19 +106,19 @@ const Footer = () => {
             >
           </p>
           <p class="mb-4">
-            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-              >Darmangi</a
-            >
+            <Link href="/projects/vision-orchard-square" class="text-neutral-600 dark:text-neutral-200"
+              >Vision Orchard Square</Link
+              >
           </p>
           <p class="mb-4">
-            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-              >Wisal Garden</a
-            >
+          <Link href="/projects/vision-21" class="text-neutral-600 dark:text-neutral-200"
+              >Vision 21</Link
+              >
           </p>
           <p>
-            <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-              >Darmangi</a
-            >
+          <Link href="/projects/vision-model-town" class="text-neutral-600 dark:text-neutral-200"
+              >Vision Model Town</Link
+              >
           </p>
         </div>
    
@@ -200,7 +200,7 @@ const Footer = () => {
   
 
     <div class="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
-      <span>© 2023 developed by <span className='font-bold text-blue-600 hover:text-blue-300'><Link target='_blank' href='https://instagram.com/iumerrr?igshid=OGQ5ZDc2ODk2ZA==' >Umer Qureshi </Link> </span> </span>
+      <span>© 2023 developed by <span className='font-bold text-blue-600 hover:text-blue-300'><Link target='_blank' href='https://www.linkedin.com/in/umer-qureshi-07861926b/' >Umer Qureshi </Link> </span> </span>
    
     </div>
   </footer>

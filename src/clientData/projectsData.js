@@ -61,7 +61,7 @@ import enclave from "@/public/projects/encalve.jpg"
         }
     },
     {
-        name:"vision-model-town-nowshera",
+        name:"vision-model-town",
         title:"Vision Model Town",
         locationdescription:"Project Model Town Nowshera is located at ideal and prime location in thecity. Residents get the liberty of quick and easy access tovarious locations",
         location:"https://www.google.com/maps/dir//33.989683,72.035173/@33.989683,72.035173,17z?entry=ttu",

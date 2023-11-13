@@ -7,7 +7,7 @@ export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-white shadow sticky">
+        <nav className="w-full bg-white  sticky">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 ">
                 <div>
                     <div className="flex items-center justify-between  md:py-3 md:block">
@@ -58,7 +58,7 @@ export default function NavBar() {
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="text-xl text-black space-y-4 md:flex md:space-x-4 md:space-y-0 gap-8">
+                        <ul className="text-xl text-black items-center text-center space-y-4 md:flex md:space-x-4 md:space-y-0 gap-8">
                             <li className=" hover:text-blue-600">
                                 <Link href="/">Home</Link>
                             </li>
@@ -67,6 +67,9 @@ export default function NavBar() {
                             </li>
                             <li className=" hover:text-blue-600">
                                 <Link href="/projects">Projects</Link>
+                            </li>
+                            <li className=" hover:bg-blue-200 hover:text-white bg-blue-400 text-white rounded-full py-1 px-3">
+                                <Link href="/contact-us">Contact Us</Link>
                             </li>
                           
                             

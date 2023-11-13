@@ -3,10 +3,11 @@ import WhatsAppButton from "./Button";
 import { useState } from "react";
 import img from "@/assets/team.png"
 import {motion} from "framer-motion"
+import Link from "next/link";
 function Hero() {
 
   return (
-    <section className="hero-wrapper  pb-4  p-4 max-w-[90vw] mx-auto bg-white rounded-tl-full shadow-lg">
+    <section className="hero-wrapper container  pb-4  p-4  mx-auto bg-white rounded-tl-full shadow-lg">
       {/* container */}
       <div className="flex sm:flex-row flex-wrap flex-reverse  flex-col items-center gap-[25px]">
         {/* Left */}
@@ -122,10 +123,10 @@ function Hero() {
                   />
                 </svg>
                 <WhatsAppButton /> */}
-                <span className="px-2  py-1 text-lg">
+                <Link href={"/projects"} className="px-2  py-1 text-lg">
 
                 Projects ►
-                </span>
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -133,7 +134,7 @@ function Hero() {
 
         {/* Right */}
 
-        <div className="hero-right  max-w-[100vw] flex flex-1 justify-center items-center w-full relative ">
+        <div className="hero-right   flex flex-1 justify-center items-center w-full relative ">
           <motion.div
             initial={{ x: "2rem", opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -159,6 +160,7 @@ function Hero() {
               objectFit="cover"
               // className="w-full h-full object-cover"
               />
+         
            
           </motion.div>
         </div>
