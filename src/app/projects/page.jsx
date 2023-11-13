@@ -19,10 +19,6 @@ import visionenclave from "@/public/projects/projectimages/visionenclave.jpg"
 
 
 
-export const metadata = {
-  title: 'PROJECTS-VGC',
-}
-
 
 function Projects() {
   return (
