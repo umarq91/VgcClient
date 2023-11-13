@@ -156,6 +156,7 @@ function Hero() {
               <Image 
               src={img}
               fill={true}
+              objectFit="cover"
               alt=""
             
               />
