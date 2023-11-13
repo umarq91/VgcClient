@@ -8,6 +8,7 @@ import ProjectsSlider from '@/components/ProjectsSlider';
 
 import LandingPageProjects from '@/components/LandingPageProjects';
 import Hero from '@/components/Hero';
+import ContactUs from '@/components/contactus';
 export default function Home() {
   return (
     <div className="  max-w-[100vw]  sm:w-full overflow-hidden">
@@ -23,6 +24,7 @@ export default function Home() {
 
     <ProjectsSlider/>
 
+  
 {/* <h2> View All Projects </h2> */}
 
       {/* <div className="grid gap-6  lg:grid-cols-2 md:grid-cols-2 grid-cols-1 xl:grid-cols-3 items-center place-items-center ">

@@ -65,7 +65,7 @@ function Hero() {
               <a
                 target="_blank"
                 href={
-                  "https://www.google.com/maps/place/MMC+General+Hospital/@34.0337191,71.6001506,19.22z/data=!4m6!3m5!1s0x38d93da3b8f429cb:0xbd5735e90857000!8m2!3d34.0336891!4d71.600201!16s%2Fg%2F1yg4vbl8m?entry=ttu"
+                  "https://www.google.com/maps/place/34%C2%B001'58.5%22N+71%C2%B035'54.2%22E/@34.0329245,71.5958136,17z/data=!3m1!4b1!4m4!3m3!8m2!3d34.0329245!4d71.5983885?hl=en&entry=ttu"
                 }
                 className="w-[50%] hover:bg-black md:w-[130px] border-black border-2 rounded-full   flex items-center justify-center hover:scale-110 transition ease-in"
               > 
@@ -134,7 +134,7 @@ function Hero() {
 
         {/* Right */}
 
-        <div className="hero-right   flex flex-1 justify-center items-center w-full relative ">
+        <div className="hero-right   flex flex-1 w-full relative ">
           <motion.div
             initial={{ x: "2rem", opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -142,7 +142,7 @@ function Hero() {
               duration: 3,
               type: "spring",
             }}
-            className="w-[400px]  sm:w-[400px] md:w-[500px]  h-[550px] lg:h-[550px] lg:mt-2  mt-8 overflow-hidden rounded-tl-3xl  border-opacity-[24] "
+            className="w-[300px] bg-red-500  sm:w-[400px] md:w-[500px]  h-[550px] lg:h-[550px] lg:mt-2  mt-8 overflow-hidden rounded-tl-3xl  border-opacity-[24] "
           >
             
               {/* <Image
@@ -157,8 +157,7 @@ function Hero() {
               src={img}
               fill={true}
               alt=""
-              objectFit="cover"
-              // className="w-full h-full object-cover"
+            
               />
          
            

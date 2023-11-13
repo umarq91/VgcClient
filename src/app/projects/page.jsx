@@ -1,3 +1,4 @@
+'use client'
 import ProjectCard from '@/components/ProjectCard'
 import Image from 'next/image'
 import React from 'react'
@@ -14,7 +15,9 @@ import vision21 from "@/public/projects/projectimages/vision21.jpg"
 import orchardsquare from "@/public/projects/projectimages/visionorchardsquare.jpg"
 import modeltown from "@/public/projects/projectimages/visionmodeltown.jpg"
 import visionenclave from "@/public/projects/projectimages/visionenclave.jpg"
-
+import mvhc from "@/public/projects/projectimages/mvhc.jpg"
+import umt from "@/public/projects/projectimages/umt.jpg"
+import {motion} from "framer-motion"
 
 
 
@@ -44,8 +47,12 @@ function Projects() {
         {" "}
        ON GOING PROJECTS {" "}
       </h1>
-    <div className='  max-w-screen-xl mx-auto my-4'>
-      <div className="grid gap-6 mt-8 lg:grid-cols-2  md:grid-cols-2 grid-cols-1 xl:grid-cols-2 items-center place-items-center ">
+    <div className='max-w-screen-xl mx-auto my-4'>
+      <motion.div
+     initial={{x:-20,  opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
+     viewport={{ once: true }} transition={{ duration: 5, type: "spring" }}  
+      
+    className="grid gap-6 mt-8 lg:grid-cols-2  md:grid-cols-2 grid-cols-1 xl:grid-cols-2 items-center place-items-center ">
 
 
 
@@ -81,10 +88,20 @@ function Projects() {
           <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
         </Link>
 
+        <Link href={"/projects/malak-vision-housing-complex"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
+          <Image  src={mvhc} fill={true} objectFit="cover" objectPosition='top'/>
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
+        </Link>
+
+        <Link href={"/projects/umt-hazara"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
+          <Image  src={umt} fill={true} objectFit="cover" objectPosition='top'/>
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
+        </Link>
 
 
 
-      </div>
+
+      </motion.div>
 
       </div>
 

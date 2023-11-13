@@ -21,7 +21,7 @@ function SingleProject() {
 
   useEffect(() => {
     function getProjectByName(name) {
-      return projectsData?.find(project => project.name === name);
+      return projectsData?.find(project => project?.name === name);
     }
 
     let foundProject = getProjectByName(params.name);
@@ -57,8 +57,8 @@ function SingleProject() {
 
 
         <div className="flex flex-col data?s-center justify-center h-full relative">
-          <h1 className="text-white m-0 text-2xl font-light text-center">PROJECT</h1>
-          <h2 className="text-center text-white text-5xl font-bold font-inconsolata tracking-[4px]">
+          <h1 className="text-white m-0 text-2xl font-light text-center  ">PROJECT</h1>
+          <h2 className="text-center text-white text-5xl font-bold font-inconsolata tracking-[4px] bg-red-500 py-1 px-3 bg-opacity-70">
             {" "}
            {data?.name.toUpperCase()}
           </h2>
@@ -75,7 +75,7 @@ function SingleProject() {
 
           {/* TEST */}
           <div className='my-10 '>
-          <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold font-openSans mb-4 text-gray-900'> {data?.title} - Peshawar </h1>
+          <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold font-openSans mb-4 text-gray-900'> {data?.title} - {data?.info?.city} </h1>
           <div className='max-h-[400px] h-[400px] relative'>
            <Image src={wisalGarden} fill={true} objectFit='cover' />
             </div>
@@ -241,6 +241,21 @@ function SingleProject() {
 
 
         </div>
+
+{data?.gallery && (
+  <>
+<h1 className='text-center text-4xl font-semibold mt-10'> --- Gallery --- </h1>
+  <div className="grid grid-cols-1 gap-6 mt-8   lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 xs:grid-cols-1 items-center place-items-center">
+  {data?.gallery?.map((item, index) => (
+    <div key={index} className="bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-110 transition-transform transition-duration-300">
+      <Image src={item.image} fill={true} objectFit="cover" objectPosition="center" />
+    </div>
+  ))}
+</div>
+  </>
+  )}
+
+
       </div>
        
  
