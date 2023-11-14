@@ -5,6 +5,11 @@ import ceo from "@/assets/ceo.JPG"
 import md from "@/assets/md.JPG"
 import second from '../../public/aboutusbg.avif'
 import manager from "@/public/shahsawar.jpeg"
+import afrozbaloch from "@/public/afrozbaloch.jpeg"
+import ibadkhan from "@/public/ibadkhan.jpeg"
+
+
+
 import Slider from '@/components/Slider';
 import TeamSlide from '@/components/TeamSlider'
 import video from "../../public/intro.mp4"
@@ -18,6 +23,7 @@ const content = {
 ,ceoinfo:"Shahabul-Islam Sahil is the visionary leader at the helm of an organization, responsible for shaping its overall strategic direction and ensuring its successful execution. As the highest-ranking executive, He plays a pivotal role in driving the company's mission, growth, and profitability. Sahil, our esteemed CEO, is a visionary leader who has been instrumental in guiding VISION MARKETING GROUP of COMPANIES to new heights of success. With a distinguished career spanning 5+ years in Peshawar, Sahil has consistently demonstrated a remarkable ability to steer our company towards excellence."
 ,mdinfo:"M. Tayyab Khan: Leading the Way in Real Estate and Marketing . In the dynamic world of real estate and marketing, leadership plays a pivotal role in shaping the success of a company. At the helm of your organization stands Mr. M. Tayyab Khan, a visionary leader whose dedication and expertise have propelled the company to new heights."
 ,managerinfo:"Meet Shahnawaz, an exceptional marketing and real estate manager whose expertise and passion have made him a true leader in the industry. With a track record of success that spans several years, Shahnawaz has proven time and again that he is a force to be reckoned with in the world of real estate and marketing."
+,sse:"Introducing Vision Group of Companies' Senior Sales Executive, a seasoned professional dedicated to driving success through unwavering commitment and exceptional sales acumen. With a proven track record of exceeding targets and fostering lasting client relationships, our Senior Sales Executive stands at the forefront of our company's success."
 }
 
 
@@ -111,8 +117,8 @@ const content = {
         </div>
       </motion.div>
 
-      <hr className="my-2" />
-      <hr className="my-6" />
+      <hr className="my-10" />
+  
 
       {/* MD INFO */}
 
@@ -120,7 +126,7 @@ const content = {
        initial={{ x: "-2rem", opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
        transition={{ duration: 3, type: "spring" }}
       
-      className="px-12 lg:flex md:flex  lg:px-16 xl:px-16 xl:mx-auto gap-[30px] mt-10">
+      className="px-12 lg:flex md:flex md:flex-row-reverse  lg:px-16 xl:px-16 xl:mx-auto gap-[30px] mt-10">
         {/* Image */}
         <div className="items-center md:ml-10 flex mx-auto md:w-1/2 lg:1/3 justify-center">
           <Image
@@ -163,7 +169,77 @@ const content = {
       </div>
 
 
+{/* Senior Executives */}
+ 
+  {/* Senior Sale Executinve 2  INFO */}
 
+   <motion.div
+       initial={{ x: "2rem", opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
+        transition={{ duration: 3, type: "spring" }}
+      className="px-12 lg:flex md:flex lg:px-16 xl:px-16 xl:mx-auto gap-[30px] mt-10">
+        {/* Image */}
+        <div className="items-center md:ml-10 flex mx-auto md:w-1/2 lg:1/3 justify-center">
+          <Image
+            src={afrozbaloch}
+            alt="image"
+            width={500}
+            height={300}
+            objectFit="cover"
+            className="rounded-full object-cover md:rounded-lg lg:rounded-lg xl:rounded-xl"
+          />
+        </div>
+        {/* Content */}
+        <div className="mt-5 mx-5 md:w-1/2 lg:1/2 flex flex-col  justify-center ">
+          <h2 className="text-2xl text-orange-600 text-center tracking-[5px]">
+            {" "}
+            Afroz Baloch{" "}
+          </h2>
+          <h2 className="text-3xl text-gray-800 text-center font-bold font-lora tracking-[2px]">
+            {" "}
+            Shahabul-Islam Sahil{" "}
+          </h2>
+          <p className="sm:text-sm">{content.sse}</p>
+        </div>
+      </motion.div>
+
+      <hr className="my-10" />
+  
+
+      {/* Senior Sale Executinve 2  INFO */}
+
+      <motion.div
+       initial={{ x: "-2rem", opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
+       transition={{ duration: 3, type: "spring" }}
+      
+      className="px-12 lg:flex md:flex md:flex-row-reverse  lg:px-16 xl:px-16 xl:mx-auto gap-[30px] mt-10">
+        {/* Image */}
+        <div className="items-center md:ml-10 flex mx-auto md:w-1/2 lg:1/3 ">
+          <Image
+            src={ibadkhan}
+            alt="image"
+            width={500}
+            height={500}
+            className="rounded-full object-cover md:rounded-lg lg:rounded-lg xl:rounded-xl"
+          />
+        </div>
+        {/* Content */}
+        <div className="mt-5 mx-5 md:w-1/2 lg:1/2  flex flex-col  justify-center ">
+          <h2 className="text-2xl text-orange-600 text-center tracking-[5px] lg:tracking-[2px]">
+            {" "}
+            Senior Sales Executive{" "}
+          </h2>
+          <h2 className="text-3xl text-gray-800 text-center font-semibold tracking-[8px] font-bold font-lora">
+            {" "}
+            Ibad Khan{" "}
+          </h2>
+          <p>{content.sse}</p>
+        </div>
+      </motion.div>
+
+
+
+
+{/* manager */}
       <motion.div
        initial={{ x: "-2rem", opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
        viewport={{ once: true }} transition={{ duration: 3, type: "spring" }}

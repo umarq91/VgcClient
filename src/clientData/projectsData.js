@@ -1,5 +1,5 @@
     import wisalgardenintrovideo from "@/public/projects/wisalgarden.mp4"
-    import wisalgardebnschedule from '@/public/projects/wgimage.jpeg'
+    import wisalgardebnschedule from '@/public/projects/wisalgardensc.jpeg'
     import visionscedule from "@/public/projects/vision-enlaveschedule.jpeg"
     import visionschedule2 from "@/public/projects/schedule2.jpeg"
     import orchardSquare from "@/public/projects/orchardsquare.jpg"

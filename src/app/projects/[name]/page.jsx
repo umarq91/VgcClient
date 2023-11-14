@@ -6,8 +6,6 @@ import projectsData from '@/clientData/projectsData';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from  "./style.module.css"
-import wisalGarden from "@/assets/projects/wisalgarden.jpeg"
-
 
 
 function SingleProject() {
@@ -76,9 +74,6 @@ function SingleProject() {
           {/* TEST */}
           <div className='my-10 '>
           <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold font-openSans mb-4 text-gray-900'> {data?.title} - {data?.info?.city} </h1>
-          <div className='max-h-[400px] h-[400px] relative'>
-           <Image src={wisalGarden} fill={true} objectFit='cover' />
-            </div>
 
             <h2 className='text-4xl text-gray-900 font-bold mt-8 mb-10'> Overview | <span className="text-blue-900 mb-10">Project Information  </span>  </h2>
 
