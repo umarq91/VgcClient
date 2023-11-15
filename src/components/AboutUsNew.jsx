@@ -74,7 +74,7 @@ const AboutUsNew = () => {
 
           <p className="text-md md:text-lg ">{content.content} </p>
         </div>
-       
+       {/* Only for gitub  */}
     <Link  href='/about-us'>
       <button className='text-white  text-lg m-2 bg-red-800 hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700'> Learn More About us </button>
     </Link>
