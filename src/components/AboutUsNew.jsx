@@ -73,6 +73,7 @@ const AboutUsNew = () => {
           </h1>
 
           <p className="text-md md:text-lg ">{content.content} </p>
+          {/* Only ir git */}
         </div>
       
     <Link  href='/about-us'>
