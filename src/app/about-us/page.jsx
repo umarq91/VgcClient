@@ -103,8 +103,8 @@ const content = {
             alt="image"
             width={500}
             height={500}
-            objectFit="cover"
-            className="rounded-full object-cover md:rounded-lg lg:rounded-lg xl:rounded-xl"
+         
+            className="rounded-full object-cover md:rounded-lg lg:rounded-lg xl:rounded-xl object-cover"
           />
         </div>
         {/* Content */}

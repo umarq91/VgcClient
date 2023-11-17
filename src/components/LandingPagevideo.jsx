@@ -16,13 +16,13 @@ const LandingPagevideo = () => {
   return (
     <motion.div initial={{ x: "2rem", opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
     viewport={{ once: true }} transition={{ duration: 3, type: "spring" }}>
-      <div className="relative h-auto  max-w-[100vw]  flex justify-center items-center">
+      <div className="relative h-auto min-h-[250px]  max-w-[100vw]  flex justify-center items-center">
         {isVideoPlaying ? (
           //  Video and layout div
           <>
             <video
               autoPlay muted onPlay={() => setIsVideoPlaying(true)}  loop
-              className="h-auto w-auto object-cover -z-1"
+              className="h-auto min-h-[400px] w-auto object-cover -z-1"
               style={{ filter: "brightness(50%)" }} // Adjust the brightness value as needed
             >
               <source src={officevideo} type="video/mp4" />
