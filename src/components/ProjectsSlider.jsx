@@ -101,7 +101,7 @@ const ProjectsSlider = () => {
                       />
                     </svg>
             
-                    <p className=""> Peshawar </p>
+                    <p className=""> {place?.location} </p>
                   </div>
                   <div className="mt-2">
                     <Link href={place?.link}

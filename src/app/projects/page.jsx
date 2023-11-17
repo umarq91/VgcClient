@@ -1,22 +1,17 @@
 'use client'
-import ProjectCard from '@/components/ProjectCard'
 import Image from 'next/image'
-import React from 'react'
-import img1 from "@/public/project1.avif";
-import img2 from "@/public/project2.avif";
 import PlacesData from '@/clientData/PlacesData';
-import wsg from "@/assets/projects/wisalgarden.jpeg"
 import v21 from "@/public/projects/vision21.jpg"
 import styles from "./styles.module.css"
 import Link from 'next/link';
 import enclaveprofile from "@/public/projects/enclaveprofile.jpg"
-import wisalgarden from "@/public/projects/projectimages/wisalgarden.jpg"
-import vision21 from "@/public/projects/projectimages/vision21.jpg"
-import orchardsquare from "@/public/projects/projectimages/visionorchardsquare.jpg"
-import modeltown from "@/public/projects/projectimages/visionmodeltown.jpg"
-import visionenclave from "@/public/projects/projectimages/visionenclave.jpg"
-import mvhc from "@/public/projects/projectimages/mvhc.jpg"
-import umt from "@/public/projects/projectimages/umt.jpg"
+import wisalgarden from "@/public/projects/projectimages/wisalgarden.jpeg"
+import vision21 from "@/public/projects/projectimages/vision21.jpeg"
+import orchardsquare from "@/public/projects/projectimages/visionorchardsquare.jpeg"
+import modeltown from "@/public/projects/projectimages/visionmodeltown.jpeg"
+import visionenclave from "@/public/projects/projectimages/visionenclave.jpeg"
+import mvhc from "@/public/projects/projectimages/mvhc.jpeg"
+import umt from "@/public/projects/projectimages/umt.jpeg"
 import {motion} from "framer-motion"
 
 
@@ -55,47 +50,47 @@ function Projects() {
     className="grid gap-6 mt-8 lg:grid-cols-2  md:grid-cols-2 grid-cols-1 xl:grid-cols-2 items-center place-items-center ">
 
 
+<Link href={"/projects/vision-orchard-square"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
+          <Image  src={orchardsquare} fill={true} />
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
+        </Link>
 
 
         <Link href={"/projects/wisal-garden"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-110 transition-transform transition-duration-300 "}>
-          <Image  src={wisalgarden} fill={true} objectFit="cover" objectPosition='center'/>
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
+          <Image  src={wisalgarden} fill={true} />
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
         </Link>
 
 
 
-        <Link href={"/projects/vision-orchard-square"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
-          <Image  src={orchardsquare} fill={true} objectFit="cover" objectPosition='center'/>
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
-        </Link>
 
 
 
         <Link href={"/projects/vision-21"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
-          <Image  src={vision21} fill={true} objectFit="cover" objectPosition='top'/>
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
+          <Image  src={vision21} fill={true} />
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
         </Link>
 
 
         <Link href={"/projects/vision-model-town"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
-          <Image  src={modeltown} fill={true} objectFit="cover" objectPosition='top'/>
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
+          <Image  src={modeltown} fill={true} />
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
         </Link>
 
 
         <Link href={"/projects/vision-enclave"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
-          <Image  src={visionenclave} fill={true} objectFit="cover" objectPosition='top'/>
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
+          <Image  src={visionenclave} fill={true} />
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
         </Link>
 
         <Link href={"/projects/malak-vision-housing-complex"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
-          <Image  src={mvhc} fill={true} objectFit="cover" objectPosition='top'/>
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
+          <Image  src={mvhc} fill={true} />
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
         </Link>
 
         <Link href={"/projects/umt-hazara"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
-          <Image  src={umt} fill={true} objectFit="cover" objectPosition='top'/>
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white'> Housing Area  </h1>
+          <Image  src={umt} fill={true} />
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
         </Link>
 
 

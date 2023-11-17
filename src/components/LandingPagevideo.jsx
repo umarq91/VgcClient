@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import video from "@/public/intro.mp4";
+import officevideo from "@/public/officevideo.mp4"
 import { useState, useEffect } from "react";
 import {motion} from "framer-motion"
 const LandingPagevideo = () => {
@@ -15,16 +16,16 @@ const LandingPagevideo = () => {
   return (
     <motion.div initial={{ x: "2rem", opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
     viewport={{ once: true }} transition={{ duration: 3, type: "spring" }}>
-      <div className="relative h-[100vh]  max-w-[100vw]  flex justify-center items-center">
+      <div className="relative h-auto  max-w-[100vw]  flex justify-center items-center">
         {isVideoPlaying ? (
           //  Video and layout div
           <>
             <video
               autoPlay muted onPlay={() => setIsVideoPlaying(true)}  loop
-              className="h-[90%] w-[90%] object-cover -z-1"
+              className="h-auto w-auto object-cover -z-1"
               style={{ filter: "brightness(50%)" }} // Adjust the brightness value as needed
             >
-              <source src={video} type="video/mp4" />
+              <source src={officevideo} type="video/mp4" />
             </video>
             <div className="absolute inset-0 flex items-center justify-center">
               {/* <div className="text-white text-center">

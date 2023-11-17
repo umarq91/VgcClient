@@ -7,15 +7,14 @@ import Stats from './Stats'
 const AboutUsNew = () => {
     const content = {
         content:"We are an emerging group of various businesses like real estate development, construction services and planning, corporate brand building, Investment planning, sales & marketing services, and digital services. The group leaders aim to make the best real estate of Pakistan by the integration of modern technology, hardworking team and unique ideas. Thus, the (Vision Group of Companies) will act as the leading smartest Real Estate Company and play its due role in Pakistan's real estate development. The corporations head office is in Peshawar, with a plethora of site offices spreading across the country. Our vision is to become Pakistan's first value-based organization and revolutionize the real estate industry in Pakistan with 100% investor confidence, satisfaction and country-wide projects"
-        ,services:"At our marketing agency specializing in real estate, we offer a comprehensive suite of services tailored to meet the evolving needs of our clients in today's dynamic market"
-      , vision:"Our vision is to surpass all expectations and become the foremost real estate company in Peshawar by harnessing the power of integrated technology, delivering an exceptional, seamless experience to our valued customers, and leading the industry with innovation and excellence.. Our expertise spans a wide spectrum of offerings, including:"
-      ,ceoinfo:"Shahabul-Islam Sahil is the visionary leader at the helm of an organization, responsible for shaping its overall strategic direction and ensuring its successful execution. As the highest-ranking executive, He plays a pivotal role in driving the company's mission, growth, and profitability. Sahil, our esteemed CEO, is a visionary leader who has been instrumental in guiding VISION MARKETING GROUP of COMPANIES to new heights of success. With a distinguished career spanning 5+ years in Peshawar, Sahil has consistently demonstrated a remarkable ability to steer our company towards excellence."
-      ,mdinfo:"M. Tayyab Khan: Leading the Way in Real Estate and Marketing . In the dynamic world of real estate and marketing, leadership plays a pivotal role in shaping the success of a company. At the helm of your organization stands Mr. M. Tayyab Khan, a visionary leader whose dedication and expertise have propelled the company to new heights."
-      ,managerinfo:"Meet Shahnawaz, an exceptional marketing and real estate manager whose expertise and passion have made him a true leader in the industry. With a track record of success that spans several years, Shahnawaz has proven time and again that he is a force to be reckoned with in the world of real estate and marketing."
+        
+      ,companyintro:"In 2017, two visionaries, Tayyab Khan and Shahabul-Islam Sahil, embarked on a journey to create not just a real estate and marketing company, but a platform that would be a beacon of opportunity and empowerment for the jobless. Thus, Vision Group of Companies was born, with a mission to not only provide people with new homes but also to offer meaningful employment opportunities.. Over the past 5-6 years, Vision Group has experienced remarkable growth, becoming a trusted name in the real estate industry. Their commitment to quality construction and innovative design has allowed countless individuals and families to achieve affordable homeownership. The company's success is not only evident in financial terms but also in the positive impact it has made on the lives of many. Vision Group's dedication to social responsibility is evident through its active engagement in community initiatives and support for local causes. As the company looks to the future, the founders remain committed to their original vision, striving to provide opportunities for the jobless and contribute to the well-being of the communities they serve. In the realm of real estate and marketing, Vision Group of Companies stands as a beacon of positive change, transforming both the lives of individuals and the landscape of the industries it operates in."
       }
+
+    
       
   return (
-    <div className='bg-gray-200 shadow-lg drop-shadow-2xl'>
+    <div className='bg-gray-200 '>
         
       {/* About Us */}
       <motion.h1 initial={{ x: "2rem", opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
@@ -45,15 +44,11 @@ const AboutUsNew = () => {
         <motion.div initial={{ x: "-2rem", opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
     viewport={{ once: true }} transition={{ duration: 3, type: "spring" }}
            className="mt-5 mx-5 md:w-1/2 lg:1/2">
-          <h2 className="text-2xl text-orange-600 text-center tracking-[15px]">
-            {" "}
-            CEO{" "}
-          </h2>
           <h2 className="text-5xl text-gray-800 text-center font-bold font-lora tracking-[2px]">
             {" "}
-            Shahabul-Islam Sahil{" "}
+            Our Story{" "}
           </h2>
-          <p className="sm:text-sm">{content.ceoinfo}</p>
+          <p className="sm:text-[16p] mt-2">{content.companyintro}</p>
         </motion.div>
       </div>
 
@@ -73,7 +68,7 @@ const AboutUsNew = () => {
           </h1>
 
           <p className="text-md md:text-lg ">{content.content} </p>
-          {/* Only ir git */}
+        
         </div>
       
     <Link  href='/about-us'>

@@ -9,11 +9,12 @@ import afrozbaloch from "@/public/afrozbaloch.jpeg"
 import ibadkhan from "@/public/ibadkhan.jpeg"
 
 
-
 import Slider from '@/components/Slider';
 import TeamSlide from '@/components/TeamSlider'
 import video from "../../public/intro.mp4"
 import {motion} from "framer-motion"
+import TeamSlide2 from '@/components/TeamSlide2'
+import AboutusPageVideo from '@/components/AboutUsPageVideo'
 
 function Aboutus() {
 const content = {
@@ -86,6 +87,9 @@ const content = {
         </div>
       </motion.div>
 
+
+
+<AboutusPageVideo/>
       {/* CEO INFO */}
 
       <motion.div
@@ -164,77 +168,31 @@ const content = {
         </h2>
         <div className=' items-center justify-center '>
           <TeamSlide />
-          
         </div>
+      
       </div>
 
+
+
+      <div className="mt-20 w-100  items-center ">
+        
+        <h2 className="text-4xl text-center lg:tracking-[2px] underline-offset-1">
+          {"Sales " }<span className='font-bold'> Executives </span>
+        </h2>
+        
+        <div className=' items-center justify-center '>
+          <TeamSlide2 />
+        </div>
+      
+      </div>
 
 {/* Senior Executives */}
  
   {/* Senior Sale Executinve 2  INFO */}
 
-   <motion.div
-       initial={{ x: "2rem", opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
-        transition={{ duration: 3, type: "spring" }}
-      className="px-12 lg:flex md:flex lg:px-16 xl:px-16 xl:mx-auto gap-[30px] mt-10">
-        {/* Image */}
-        <div className="items-center md:ml-10 flex mx-auto md:w-1/2 lg:1/3 justify-center">
-          <Image
-            src={afrozbaloch}
-            alt="image"
-            width={500}
-            height={300}
-            objectFit="cover"
-            className="rounded-full object-cover md:rounded-lg lg:rounded-lg xl:rounded-xl"
-          />
-        </div>
-        {/* Content */}
-        <div className="mt-5 mx-5 md:w-1/2 lg:1/2 flex flex-col  justify-center ">
-          <h2 className="text-2xl text-orange-600 text-center tracking-[5px]">
-            {" "}
-            Afroz Baloch{" "}
-          </h2>
-          <h2 className="text-3xl text-gray-800 text-center font-bold font-lora tracking-[2px]">
-            {" "}
-            Shahabul-Islam Sahil{" "}
-          </h2>
-          <p className="sm:text-sm">{content.sse}</p>
-        </div>
-      </motion.div>
 
       <hr className="my-10" />
   
-
-      {/* Senior Sale Executinve 2  INFO */}
-
-      <motion.div
-       initial={{ x: "-2rem", opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} 
-       transition={{ duration: 3, type: "spring" }}
-      
-      className="px-12 lg:flex md:flex md:flex-row-reverse  lg:px-16 xl:px-16 xl:mx-auto gap-[30px] mt-10">
-        {/* Image */}
-        <div className="items-center md:ml-10 flex mx-auto md:w-1/2 lg:1/3 ">
-          <Image
-            src={ibadkhan}
-            alt="image"
-            width={500}
-            height={500}
-            className="rounded-full object-cover md:rounded-lg lg:rounded-lg xl:rounded-xl"
-          />
-        </div>
-        {/* Content */}
-        <div className="mt-5 mx-5 md:w-1/2 lg:1/2  flex flex-col  justify-center ">
-          <h2 className="text-2xl text-orange-600 text-center tracking-[5px] lg:tracking-[2px]">
-            {" "}
-            Senior Sales Executive{" "}
-          </h2>
-          <h2 className="text-3xl text-gray-800 text-center font-semibold tracking-[8px] font-bold font-lora">
-            {" "}
-            Ibad Khan{" "}
-          </h2>
-          <p>{content.sse}</p>
-        </div>
-      </motion.div>
 
 
 
