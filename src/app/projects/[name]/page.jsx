@@ -243,7 +243,7 @@ function SingleProject() {
   <div className="grid grid-cols-1 gap-6 mt-8   lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 xs:grid-cols-1 items-center place-items-center">
   {data?.gallery?.map((item, index) => (
     <div key={index} className="bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-110 transition-transform transition-duration-300">
-      <Image src={item.image} fill={true} objectFit="cover" objectPosition="center" />
+      <Image src={item.image} className='object-cover object-center' fill={true}   />
     </div>
   ))}
 </div>

@@ -46,7 +46,7 @@
             location:"https://www.google.com/maps/dir//34.051685,71.528664/@34.051685,71.528664,17z?entry=ttu",
             schedule:orchardSquare,
             info:{
-                locality:"Opposite askari 6 near rabbani heights nasar Bagh road Peshawar",
+                locality:"Budhi pull fakeer kaly road darmangi warsak road peshawar",
                 city:"Peshawar",
                 type:"Commericial and Residential",
                 developer:"Vision Group of Companies",
@@ -97,8 +97,8 @@
             schedule2:enclave,
             schedule:visionschedule2,
             info:{
-                locality:"Near dhera kati khel nowshehra",
-                city:"Nowshera",
+                locality:"Opposite askari 6 near rabbani heights nasar Bagh road Peshawar",
+                city:"Peshawar",
                 type:"Commericial and Residential",
                 developer:"Vision Group of Companies",
                 paymentplan:"3 years Installment plan ",

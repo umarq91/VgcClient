@@ -5,9 +5,6 @@ import ceo from "@/assets/ceo.JPG"
 import md from "@/assets/md.JPG"
 import second from '../../public/aboutusbg.avif'
 import manager from "@/public/shahsawar.jpeg"
-import afrozbaloch from "@/public/afrozbaloch.jpeg"
-import ibadkhan from "@/public/ibadkhan.jpeg"
-
 
 import Slider from '@/components/Slider';
 import TeamSlide from '@/components/TeamSlider'
@@ -177,7 +174,7 @@ const content = {
       <div className="mt-20 w-100  items-center ">
         
         <h2 className="text-4xl text-center lg:tracking-[2px] underline-offset-1">
-          {"Sales " }<span className='font-bold'> Executives </span>
+          {" Senior" }<span className='font-bold'>  Sales  Executives </span>
         </h2>
         
         <div className=' items-center justify-center '>

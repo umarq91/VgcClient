@@ -52,13 +52,13 @@ function Projects() {
 
 <Link href={"/projects/vision-orchard-square"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
           <Image  src={orchardsquare} fill={true} />
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Society  </h1>
         </Link>
 
 
         <Link href={"/projects/wisal-garden"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-110 transition-transform transition-duration-300 "}>
           <Image  src={wisalgarden} fill={true} />
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Society  </h1>
         </Link>
 
 
@@ -68,29 +68,29 @@ function Projects() {
 
         <Link href={"/projects/vision-21"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
           <Image  src={vision21} fill={true} />
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Society  </h1>
         </Link>
 
 
         <Link href={"/projects/vision-model-town"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
           <Image  src={modeltown} fill={true} />
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Society  </h1>
         </Link>
 
 
         <Link href={"/projects/vision-enclave"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
           <Image  src={visionenclave} fill={true} />
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Society  </h1>
         </Link>
 
         <Link href={"/projects/malak-vision-housing-complex"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
           <Image  src={mvhc} fill={true} />
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Society  </h1>
         </Link>
 
         <Link href={"/projects/umt-hazara"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
           <Image  src={umt} fill={true} />
-          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Area  </h1>
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Society  </h1>
         </Link>
 
 
