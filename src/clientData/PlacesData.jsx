@@ -6,6 +6,8 @@ import modeltown from "@/public/projects/projectimages/visionmodeltown.jpeg"
 import visionenclave from "@/public/projects/projectimages/visionenclave.jpeg"
 import mvhc from "@/public/projects/projectimages/mvhc.jpeg"
 import umt from "@/public/projects/projectimages/umt.jpeg"
+import motorwaycity from "@/public/projects/projectimages/motorwaycity.jpeg"
+
 
 
 const  PlacesData=[
@@ -16,7 +18,8 @@ const  PlacesData=[
     {title:"Vision Model Town",img:modeltown,name:'vision-model-town',type:' Housing Society',location:"Peshawar",link:"/projects/vision-model-town"},
     {title:"Umt Hazara",img:umt,name:'umt-hazara',type:' Housing Society',location:"Hazara",link:"/projects/umt-hazara"},
     {title:"Malak Vision Housing Complex",img:mvhc,name:'Malak-vision-Housing-Complex',type:'Housing Society',location:"Peshawar",link:"/projects/malak-vision-housing-complex"},
-
+    {title:"Vision Motorawy City",img:motorwaycity,name:'vision-motorway-city',type:'Housing Society',location:"Peshawar",link:"/projects/vision-motorway-city"},
+ 
 
 
 

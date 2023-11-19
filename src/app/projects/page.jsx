@@ -12,6 +12,8 @@ import modeltown from "@/public/projects/projectimages/visionmodeltown.jpeg"
 import visionenclave from "@/public/projects/projectimages/visionenclave.jpeg"
 import mvhc from "@/public/projects/projectimages/mvhc.jpeg"
 import umt from "@/public/projects/projectimages/umt.jpeg"
+import motorwaycity from "@/public/projects/projectimages/motorwaycity.jpeg"
+
 import {motion} from "framer-motion"
 
 
@@ -93,6 +95,11 @@ function Projects() {
           <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Society  </h1>
         </Link>
 
+
+        <Link href={"/projects/vision-motorway-hazara"} className={styles.brightness + " bg-red-200 w-full h-[400px] relative hover:brightness-100 cursor-pointer hover:scale-105 transition-transform transition-duration-300 "}>
+          <Image  src={motorwaycity} fill={true} />
+          <h1 className='absolute bottom-0 left-0 text-xl bg-red-600 px-4 text-white object-cover object-top'> Housing Society  </h1>
+        </Link>
 
 
 

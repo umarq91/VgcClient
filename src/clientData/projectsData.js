@@ -6,6 +6,7 @@
     import vision21sc from "@/public/projects/visionsc.jpg"
     import vision21video from "@/public/projects/vision21video.mp4"
     import visionmodeltown from "@/public/projects/visionmodeltown.jpeg"
+    import motorwaycityschedule from "@/public/projects/mcschedule.jpeg"
     import enclave from "@/public/projects/encalve.jpg"
     import malakvision from "@/public/projects/mvhc.jpeg"
     import umtschedule1 from "@/public/projects/umt1.jpeg"
@@ -147,7 +148,22 @@
                 { image: umt7, caption: "UMT Image 7" },
                 { image: umt8, caption: "UMT Image 8" }
             ]
-        },
+        },  {
+            name:"Vision Motorway City",
+            title:"Vision Motorway City",
+            locationdescription:"Project Vision Motorway City is located at ideal and prime location in thecity. Residents get the liberty of quick and easy access tovarious locations",
+            location:"https://www.google.com/maps/dir//34.0640367,71.7078117/@34.0640367,71.7052368,17z?hl=en&entry=ttu",
+            schedule:motorwaycityschedule,
+            info:{
+                locality:"Chowk jabba daud zai bypass Peshawar motor way service road peshawar",
+                city:"Peshawar ",
+                type:"Commericial and Residential",
+                developer:"Vision Group of Companies",
+                paymentplan:"3 years Installment plan ",
+                paymentmodes:"Bank transfer,cheque"
+            },
+            
+        }
 
 
     ]
