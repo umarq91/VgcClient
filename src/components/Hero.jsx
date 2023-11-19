@@ -65,7 +65,7 @@ function Hero() {
               <a
                 target="_blank"
                 href={
-                  "https://www.google.com/maps/place/34%C2%B001'58.5%22N+71%C2%B035'54.2%22E/@34.0329245,71.5958136,17z/data=!3m1!4b1!4m4!3m3!8m2!3d34.0329245!4d71.5983885?hl=en&entry=ttu"
+                  "https://www.google.com/maps/dir//34.0639696,71.7078277/@34.0639696,71.7052528,17z?hl=en&entry=ttu"
                 }
                 className="w-[50%] hover:bg-black md:w-[130px] border-black border-2 rounded-full   flex items-center justify-center hover:scale-110 transition ease-in"
               > 
