@@ -149,7 +149,7 @@
                 { image: umt8, caption: "UMT Image 8" }
             ]
         },  {
-            name:"Vision Motorway City",
+            name:"vision-motorway-city",
             title:"Vision Motorway City",
             locationdescription:"Project Vision Motorway City is located at ideal and prime location in thecity. Residents get the liberty of quick and easy access tovarious locations",
             location:"https://www.google.com/maps/dir//34.0640367,71.7078117/@34.0640367,71.7052368,17z?hl=en&entry=ttu",
