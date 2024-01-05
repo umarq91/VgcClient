@@ -108,23 +108,7 @@ function Hero() {
 
               {/* Email  */}
               <div className="border-black cursor-pointer   hover:bg-black hover:text-white border-2 rounded-full  flex justify-center px-2 py-1 ml-2 gap-2 hover:scale-110  transition ease-in">
-                {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-8 text-black hover:text-white"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                  />
-                </svg>
-                <WhatsAppButton /> */}
                 <Link href={"/projects"} className="px-2  py-1 text-lg">
-
                 Projects ►
                 </Link>
               </div>
@@ -145,14 +129,7 @@ function Hero() {
             className="w-[300px] bg-red-500  sm:w-[400px] md:w-[500px]  h-[550px] lg:h-[550px] lg:mt-2  mt-8 overflow-hidden rounded-tl-3xl  border-opacity-[24] "
           >
             
-              {/* <Image
-                alt="c"
-                className="w-full hide object-cover object-cover opacity-70"
-             objectFit="cover"
-             
-              fill={true}
-                src={img}
-              /> */}
+    
               <Image 
               src={img}
               fill={true}

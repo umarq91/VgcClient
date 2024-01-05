@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import ceo from "@/public/sahil.JPG"
 import {motion} from "framer-motion"
 import Stats from './Stats'
 const AboutUsNew = () => {
