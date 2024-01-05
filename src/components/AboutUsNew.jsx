@@ -32,9 +32,9 @@ const AboutUsNew = () => {
         
         className="items-center md:ml-10 flex mx-auto md:w-1/2 lg:1/3 justify-center">
           <Image
-            src={ceo}
+            src={'https://res.cloudinary.com/dmlr7y0xh/image/upload/v1704434309/_AAA0218_j7s0xv.jpg'}
             alt="image"
-            width={300}
+            width={500}
             height={300}
             objectFit="cover"
             className="rounded-full drop-shadow-xl object-cover md:rounded-lg lg:rounded-lg xl:rounded-xl"
