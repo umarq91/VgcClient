@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import video from "@/public/intro.mp4";
 import { useState, useEffect } from "react";
 import {motion} from "framer-motion"
 const LandingPagevideo = () => {
@@ -24,7 +23,7 @@ const LandingPagevideo = () => {
               className="h-auto w-auto object-cover -z-1"
               style={{ filter: "brightness(50%)" }} // Adjust the brightness value as needed
             >
-              <source src={video} type="video/mp4" />
+              <source src={"https://res.cloudinary.com/dmlr7y0xh/video/upload/v1704435236/officevideo_vyj9ah.mp4"} type="video/mp4" />
             </video>
             <div className="absolute inset-0 flex items-center justify-center">
               {/* <div className="text-white text-center">
